@@ -15,8 +15,6 @@ if( $_SERVER['SCRIPT_FILENAME'] == __FILE__ ) {
   exit;
 }
 
-require_once('lib/OAuth.php');
-
 
 /**
  * Register review post type to handle website reviews.
@@ -71,65 +69,21 @@ add_action( 'init', 'br_register_review_post_type' );
  * @param string $key Name of the parameter
  */
 function br_config( $key ){
-	$setting = array(
-		'YELP_CONSUMER_KEY'       => 'NgM1IEbIDTfHQGUlo0sdEw',
-		'YELP_CONSUMER_SECRET'    => 'KdXqKjBzIOb62tc3mOt3HrviCvg',
-		'YELP_TOKEN'              => 'VryQxQd4XEW8IznSOlf71Rm706KpDmCU',
-		'YELP_TOKEN_SECRET'       => '9x-A_74rS6rzeBoP1ZKo6pOWjsY',
-		'YELP_API_HOST'           => 'api.yelp.com',
-		'YELP_BUSINESS_PATH'      => '/v2/business/',
-		'YELP_BUSINESS_ID'        => 'advanced-vision-care-jupiter',
-		'GOOGLE_BUSINESS_ID'      => 'ChIJfztGyJbV3ogR1syto6WRKfY' );
+	$setting = array();
 
 	return isset($setting[$key]) ? $setting[$key] : false;
 }
-
-
-
-/**
- * Specify wheather it is the review page or not.
- */
-function br_is_review_page(){
-	return true;
-}
-
 
 /**
  * Add scripts on the front-end
  */
 function br_enqueue_front_end(){
 
-	if(!br_is_review_page()) return;
-
-	wp_enqueue_script( 
-		'google-place', 
-		'https://maps.googleapis.com/maps/api/js?libraries=places', array() );
-	
-	wp_enqueue_script( 
-		'angular', 
-		plugins_url( 'js/angular.min.js', __FILE__ ), 
-		array(), 
-		'1.3.9' );
-	
-	wp_enqueue_script( 
-		'angularjs-google-places', 
-		plugins_url( 'js/angularjs-google-places.js', __FILE__ ), 
-		array('jquery', 'angular', 'google-place') );
-	
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 
 		'fancybox', 
 		plugins_url( 'js/jquery.fancybox.pack.js', __FILE__ ), 
 		array('jquery') );
-	
-	wp_enqueue_script( 
-		'google-place-review-module', 
-		plugins_url( 'js/businessReviewModule.js', __FILE__ ), 
-		array('angularjs-google-places', 'jquery', 'angular') );
-	wp_localize_script( 'google-place-review-module', 'br', array(
-		'yelpReviewURL'    => admin_url('admin-ajax.php?action=yelp-business'),
-		'googleBusinessID' => br_config('GOOGLE_BUSINESS_ID') ) );
-
-
 
 	wp_enqueue_style( 'fancybox', plugins_url( 'css/jquery.fancybox.css', __FILE__ ) );
 }
@@ -155,78 +109,9 @@ function br_review_shortcode_content(){
 		$('#submit-review').fancybox({
 			href: 'http://mohaimenuls-imac.local:5757/'
 		});
-	})
+	});
 	</script>
 	<?php
 	return ob_get_clean();
 }
 add_shortcode('business_reviews', 'br_review_shortcode_content');
-
-
-/** 
- * Makes a request to the Yelp API and returns the response
- * 
- * @param    $host    The domain host of the API 
- * @param    $path    The path of the APi after the domain
- * @return   The JSON response from the request      
- */
-function br_yelp_request($host, $path) {
-    $unsigned_url = "http://" . $host . $path;
-
-    // Token object built using the OAuth library
-    $token = new OAuthToken(br_config('YELP_TOKEN'), br_config('YELP_TOKEN_SECRET'));
-
-    // Consumer object built using the OAuth library
-    $consumer = new OAuthConsumer(br_config('YELP_CONSUMER_KEY'), br_config('YELP_CONSUMER_SECRET'));
-
-    // Yelp uses HMAC SHA1 encoding
-    $signature_method = new OAuthSignatureMethod_HMAC_SHA1();
-
-    $oauthrequest = OAuthRequest::from_consumer_and_token(
-        $consumer, 
-        $token, 
-        'GET', 
-        $unsigned_url
-    );
-    
-    // Sign the request
-    $oauthrequest->sign_request($signature_method, $consumer, $token);
-    
-    // Get the signed URL
-    $signed_url = $oauthrequest->to_url();
-    
-    // Send Yelp API Call
-    $ch = curl_init($signed_url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    $data = curl_exec($ch);
-    curl_close($ch);
-    
-    return $data;
-}
-
-
-/**
- * Query the Business API by business_id
- * 
- * @param    $business_id    The ID of the business to query
- * @return   The JSON response from the request 
- */
-function br_get_yelp_business($business_id) {
-    $business_path = br_config('YELP_BUSINESS_PATH') . $business_id;
-    
-    return br_yelp_request(br_config('YELP_API_HOST'), $business_path);
-}
-
-/**
- * Displays the business json object to use from admin-ajax.php
- * 
- * The admin-ajax.php will be embaded as js file 
- */
-function br_yelp_business_object(){
-	// header("Content-type: text/javascript");
-	echo br_get_yelp_business(br_config('YELP_BUSINESS_ID'));
-	exit;
-}
-add_action('wp_ajax_yelp-business', 'br_yelp_business_object');
-add_action('wp_ajax_nopriv_yelp-business', 'br_yelp_business_object');
