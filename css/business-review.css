@@ -58,6 +58,8 @@ body.br-review-result {
 	-ms-transition: width 300ms ease;
 	-o-transition: width 300ms ease;
 	transition: width 300ms ease;
+
+	margin-bottom: 0;
 }
 .br-stars {
 	width: 160px;
@@ -123,6 +125,10 @@ body.br-review-result {
 	width: 50%;
 	float: left;
 }
+.review-row label {
+	margin-bottom: 0;
+	margin-top: 5px;
+}
 #review-form h2 {
 	font-size: 30px;
 	text-align: center;
@@ -146,10 +152,9 @@ body.br-review-result {
 }
 #review-form .review-row {
 	clear: both;
-	overflow: hidden;
 }
 .review-left .review-row {
-	width: 240px;
+	width: 380px;
 	margin: 0 auto 10px;
 }
 .review-center {

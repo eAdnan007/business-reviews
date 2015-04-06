@@ -144,25 +144,27 @@ class Business_Review {
 				'title'                => __( 'Average Rating', 'business-review' ),
 				'type'                 => 'text' ),
 			'rating_overall'         => array( 
-				'title'                => __( 'Overall Rating', 'business-review' ),
+				'title'                => __( 'How would you rate your overall experience in the office?', 'business-review' ),
 				'type'                 => 'rating',
 				'weight'               => $weights['overall'] ),
-			'rating_clean'           => array( 
-				'title'                => __( 'Cleanliness of Office', 'business-review' ),
+			'rating_front_desk'      => array(
+				'title'                => __( 'How was your experience with the front desk staff?' ),
 				'type'                 => 'rating',
-				'weight'               => $weights['clean'] ),
-			'rating_wait_time'       => array( 
-				'title'                => __( 'Wait time', 'business-review' ),
+				'weight'               => $weights['front_desk'] ),
+			'rating_doctor'          => array(
+				'title'                => __( 'How was your experience with the Doctor? (if applicable)' ),
 				'type'                 => 'rating',
-				'weight'               => $weights['wait_time'] ),
-			'rating_professionalism' => array( 
-				'title'                => __( 'Professionalism', 'business-review' ),
+				'weight'               => $weights['doctor'] ),
+			'rating_optical_staff'   => array(
+				'title'                => __( 'How was your experience with the Optical Staff?', 'business-review' ),
+				'desc'                 => __( 'The people that sell and dispense the glasses.', 'business-review'),
 				'type'                 => 'rating',
-				'weight'               => $weights['professionalism'] ),
-			'rating_knowledge'       => array( 
-				'title'                => __( 'Knowledge of employees', 'business-review' ),
+				'weight'               => $weights['optical_staff'] ),
+			'rating_appearance'      => array(
+				'title'                => __( 'How would you rate the overall appearance of the office?', 'business-review' ),
 				'type'                 => 'rating',
-				'weight'               => $weights['knowledge'] ) );
+				'weight'               => $weights['appearance'] ),
+		);
 	}
 
 
@@ -258,16 +260,14 @@ class Business_Review {
 		// No need to proceed in case of other post type.
 		if( 'business_review' != $post->post_type ) return;
 
-		$this->update_settings();
-
 		/**
 		 * Store the ip address of reviewer
 		 * 
 		 * The review might be updated by some website users after the review has been submitted for first time. 
 		 * In such case there will be already an ip address set. We do not want to override that value to preserve
-		 * the ip address of the actual reviewer.
+		 * the ip address of the actual reviewer, which is ensured by the fourth argument.
 		 */
-		add_post_meta( $post_id, 'reviewer_ip', $_SERVER['REMOTE_ADDR'], true );
+		add_post_meta( $post_id, 'br_review_info_reviewer_ip', $_SERVER['REMOTE_ADDR'], true );
 
 
 		$fields = $this->get_review_info( $post_id );
@@ -289,7 +289,7 @@ class Business_Review {
 			}
 		}
 		if( $total_stars != 0 ){
-			$avg_rating = 5.0 * $achived_stars / $total_stars; // Avg is 5 based
+			$avg_rating = 5.0 * ($achived_stars / $total_stars); // Avg is 5 based
 			update_post_meta( $post_id, 'br_review_info_rating_avg', $avg_rating );
 		}
 
@@ -581,10 +581,10 @@ class Business_Review {
 				<?php 
 				$review_fields = array(
 					'rating_overall',
-					'rating_clean',
-					'rating_wait_time',
-					'rating_professionalism',
-					'rating_knowledge'
+					'rating_front_desk',
+					'rating_doctor',
+					'rating_optical_staff',
+					'rating_appearance'
 				);
 
 				foreach( $review_fields as $key ){
@@ -1034,9 +1034,13 @@ class Business_Review {
 
 			<a class="rating-info" href="<?php echo $review_page_url . '#' . $location; ?>">
 				<?php
+				if( 0 == $grand_avg )
+					_e( 'Be the first one to review.', 'business-review' );
+				else
 				echo sprintf(
-					_n( '%0.2lf/5 from %lf ratings.', '%0.2lf/5 from one rating.', $grand_avg, 'business-review' ), 
-					$grand_avg, $count );?>
+						_n( '%0.2lf/5 from one rating.', '%0.2lf/5 from %d ratings.', $count, 'business-review' ), 
+						$grand_avg, $count );
+				?>
 			</a>
 		</div>
 
