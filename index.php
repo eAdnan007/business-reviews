@@ -140,7 +140,7 @@ class Business_Review {
 				'title'                => __( 'Date of Visit', 'business-review' ),
 				'type'                 => 'text',
 				'validation'           => 'date' ),
-			'rating_avg'         => array( 
+			'rating_avg'             => array( 
 				'title'                => __( 'Average Rating', 'business-review' ),
 				'type'                 => 'text' ),
 			'rating_overall'         => array( 
@@ -1037,7 +1037,7 @@ class Business_Review {
 				if( 0 == $grand_avg )
 					_e( 'Be the first one to review.', 'business-review' );
 				else
-				echo sprintf(
+					echo sprintf(
 						_n( '%0.2lf/5 from one rating.', '%0.2lf/5 from %d ratings.', $count, 'business-review' ), 
 						$grand_avg, $count );
 				?>
