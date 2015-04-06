@@ -109,7 +109,6 @@ class Business_Review {
 	 * Get latest configuration to this object on init.
 	 */
 	public function update_settings(){
-		$weights = $this->config( 'rating_weight' );
 
 		$this->review_info = array(
 			'reviewer_ip'             => array( 
@@ -143,27 +142,26 @@ class Business_Review {
 			'rating_avg'             => array( 
 				'title'                => __( 'Average Rating', 'business-review' ),
 				'type'                 => 'text' ),
-			'rating_overall'         => array( 
-				'title'                => __( 'How would you rate your overall experience in the office?', 'business-review' ),
+			'rating_one'             => array(
+				'title'                => $this->config('rating_criteria_one')['long_title'],
 				'type'                 => 'rating',
-				'weight'               => $weights['overall'] ),
-			'rating_front_desk'      => array(
-				'title'                => __( 'How was your experience with the front desk staff?' ),
+				'weight'               => $this->config('rating_criteria_one')['weight'] ),
+			'rating_two'             => array(
+				'title'                => $this->config('rating_criteria_two')['long_title'],
 				'type'                 => 'rating',
-				'weight'               => $weights['front_desk'] ),
-			'rating_doctor'          => array(
-				'title'                => __( 'How was your experience with the Doctor? (if applicable)' ),
+				'weight'               => $this->config('rating_criteria_two')['weight'] ),
+			'rating_three'             => array(
+				'title'                => $this->config('rating_criteria_three')['long_title'],
 				'type'                 => 'rating',
-				'weight'               => $weights['doctor'] ),
-			'rating_optical_staff'   => array(
-				'title'                => __( 'How was your experience with the Optical Staff?', 'business-review' ),
-				'desc'                 => __( 'The people that sell and dispense the glasses.', 'business-review'),
+				'weight'               => $this->config('rating_criteria_three')['weight'] ),
+			'rating_four'             => array(
+				'title'                => $this->config('rating_criteria_four')['long_title'],
 				'type'                 => 'rating',
-				'weight'               => $weights['optical_staff'] ),
-			'rating_appearance'      => array(
-				'title'                => __( 'How would you rate the overall appearance of the office?', 'business-review' ),
+				'weight'               => $this->config('rating_criteria_four')['weight'] ),
+			'rating_five'             => array(
+				'title'                => $this->config('rating_criteria_five')['long_title'],
 				'type'                 => 'rating',
-				'weight'               => $weights['appearance'] ),
+				'weight'               => $this->config('rating_criteria_five')['weight'] )
 		);
 	}
 
@@ -580,11 +578,11 @@ class Business_Review {
 			<div class="review-left">
 				<?php 
 				$review_fields = array(
-					'rating_overall',
-					'rating_front_desk',
-					'rating_doctor',
-					'rating_optical_staff',
-					'rating_appearance'
+					'rating_one',
+					'rating_two',
+					'rating_three',
+					'rating_four',
+					'rating_five'
 				);
 
 				foreach( $review_fields as $key ){
