@@ -36,8 +36,8 @@ class Business_Review {
 		if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' ) ) {
 		    require_once( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' );
 		}
-		if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/options/br-config.php' ) ) {
-		    require_once( dirname( __FILE__ ) . '/options/br-config.php' );
+		if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/br-config.php' ) ) {
+		    require_once( dirname( __FILE__ ) . '/br-config.php' );
 		}
 
 
