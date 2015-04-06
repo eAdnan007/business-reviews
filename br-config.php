@@ -3,7 +3,7 @@
      * ReduxFramework Sample Config File
      * For full documentation, please visit: http://docs.reduxframework.com/
      */
- 
+
     if ( ! class_exists( 'KWS_Business_Review_Config' ) ) {
 
         class KWS_Business_Review_Config {
@@ -249,24 +249,89 @@
                             )
                         ),
                         array(
-                            'id'       => 'rating_weight',
+                            'id'       => 'rating_criteria_one',
                             'type'     => 'text',
-                            'title'    => __( 'Rating Weight', 'business-review' ),
-                            'subtitle' => __( 'Weight of each rating criteria.', 'business-review' ),
+                            'title'    => __( 'Rating Criteria One Options', 'business-review' ),
                             'default'     => array( 
-                                'overall'             => 5,
-                                'front_desk'          => 5,
-                                'doctor'              => 5,
-                                'optical_staff'       => 5,
-                                'appearance'          => 5
+                                'weight'              => 5,
+                                'short_title'         => __( 'Overall', 'business-review' ),
+                                'long_title'          => __( 'How would you rate your overall experience in the office?', 'business-review' ),
+                                'description'         => ''
                             ),
                             'options'     => array( 
-                                'overall'             => __( 'Overall', 'business-review' ),
-                                'front_desk'          => __( 'Front Desk', 'business-review' ),
-                                'doctor'              => __( 'Doctor', 'business-review' ),
-                                'optical_staff'       => __( 'Optical Staff', 'business-review' ),
-                                'appearance'          => __( 'Appearance', 'business-review' )
+                                'weight'              => __( 'Weight', 'business-review' ),
+                                'short_title'         => __( 'Short Title', 'business-review' ),
+                                'long_title'          => __( 'Long Title', 'business-review' ),
+                                'description'         => __( 'Description', 'business-review' )
+                            )
+                        ),
+                        array(
+                            'id'       => 'rating_criteria_two',
+                            'type'     => 'text',
+                            'title'    => __( 'Rating Criteria Two Options', 'business-review' ),
+                            'default'     => array( 
+                                'weight'              => 5,
+                                'short_title'         => __( 'Front Desk', 'business-review' ),
+                                'long_title'          => __( 'How was your experience with the front desk staff?', 'business-review' ),
+                                'description'         => ''
                             ),
+                            'options'     => array( 
+                                'weight'              => __( 'Weight', 'business-review' ),
+                                'short_title'         => __( 'Short Title', 'business-review' ),
+                                'long_title'          => __( 'Long Title', 'business-review' ),
+                                'description'         => __( 'Description', 'business-review' )
+                            )
+                        ),
+                        array(
+                            'id'       => 'rating_criteria_three',
+                            'type'     => 'text',
+                            'title'    => __( 'Rating Criteria Three Options', 'business-review' ),
+                            'default'     => array( 
+                                'weight'              => 5,
+                                'short_title'         => __( 'Doctor', 'business-review' ),
+                                'long_title'          => __( 'How was your experience with the Doctor? (if applicable)', 'business-review' ),
+                                'description'         => ''
+                            ),
+                            'options'     => array( 
+                                'weight'              => __( 'Weight', 'business-review' ),
+                                'short_title'         => __( 'Short Title', 'business-review' ),
+                                'long_title'          => __( 'Long Title', 'business-review' ),
+                                'description'         => __( 'Description', 'business-review' )
+                            )
+                        ),
+                        array(
+                            'id'       => 'rating_criteria_four',
+                            'type'     => 'text',
+                            'title'    => __( 'Rating Criteria Four Options', 'business-review' ),
+                            'default'     => array( 
+                                'weight'              => 5,
+                                'short_title'         => __( 'Optical Staff', 'business-review' ),
+                                'long_title'          => __( 'How was your experience with the Optical Staff?', 'business-review' ),
+                                'description'         => ''
+                            ),
+                            'options'     => array( 
+                                'weight'              => __( 'Weight', 'business-review' ),
+                                'short_title'         => __( 'Short Title', 'business-review' ),
+                                'long_title'          => __( 'Long Title', 'business-review' ),
+                                'description'         => __( 'Description', 'business-review' )
+                            )
+                        ),
+                        array(
+                            'id'       => 'rating_criteria_five',
+                            'type'     => 'text',
+                            'title'    => __( 'Rating Criteria Five Options', 'business-review' ),
+                            'default'     => array( 
+                                'weight'              => 5,
+                                'short_title'         => __( 'Appearance', 'business-review' ),
+                                'long_title'          => __( 'How would you rate the overall appearance of the office?', 'business-review' ),
+                                'description'         => ''
+                            ),
+                            'options'     => array( 
+                                'weight'              => __( 'Weight', 'business-review' ),
+                                'short_title'         => __( 'Short Title', 'business-review' ),
+                                'long_title'          => __( 'Long Title', 'business-review' ),
+                                'description'         => __( 'Description', 'business-review' )
+                            )
                         ),
                         array(
                             'id'       => 'satisfaction_threshold',
