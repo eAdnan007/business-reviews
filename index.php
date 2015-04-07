@@ -373,7 +373,7 @@ class Business_Review {
 	 * 
 	 * @param string $key Name of the parameter
 	 */
-	public function config( $key ){
+	public static function config( $key ){
 		global $business_review_config;
 
 		$locations = array();
@@ -788,10 +788,11 @@ class Business_Review {
 			}
 		}
 
-		$existing_reviews = get_posts( $query );
-
-
-		$user_could_review = empty( $existing_reviews );
+		$user_could_review = true;
+		if( $one_review_per_ip || $one_review_per_email ){
+			$existing_reviews = get_posts( $query );
+			$user_could_review = empty( $existing_reviews );
+		}
 		
 		// Only create the review if the user is not caught reviewing multiple times
 		if( $user_could_review ){
