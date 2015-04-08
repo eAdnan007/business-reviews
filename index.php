@@ -144,22 +144,27 @@ class Business_Review {
 				'type'                 => 'text' ),
 			'rating_one'             => array(
 				'title'                => $this->config('rating_criteria_one')['long_title'],
+				'short_title'          => $this->config('rating_criteria_one')['short_title'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_one')['weight'] ),
 			'rating_two'             => array(
 				'title'                => $this->config('rating_criteria_two')['long_title'],
+				'short_title'          => $this->config('rating_criteria_two')['short_title'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_two')['weight'] ),
-			'rating_three'             => array(
+			'rating_three'           => array(
 				'title'                => $this->config('rating_criteria_three')['long_title'],
+				'short_title'          => $this->config('rating_criteria_three')['short_title'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_three')['weight'] ),
-			'rating_four'             => array(
+			'rating_four'            => array(
 				'title'                => $this->config('rating_criteria_four')['long_title'],
+				'short_title'          => $this->config('rating_criteria_four')['short_title'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_four')['weight'] ),
-			'rating_five'             => array(
+			'rating_five'            => array(
 				'title'                => $this->config('rating_criteria_five')['long_title'],
+				'short_title'          => $this->config('rating_criteria_five')['short_title'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_five')['weight'] )
 		);
@@ -214,7 +219,7 @@ class Business_Review {
 		<tbody>
 			<?php foreach( $review_info as $key => $field ): ?>
 				<tr valign="top">
-					<td class="first"><?php echo $field['title']; ?></td>
+					<td class="first"><?php echo isset($field['short_title']) ? $field['short_title'] : $field['title']; ?></td>
 					<?php 
 					$data = array(
 						'name'  => "review_info[$key]",
