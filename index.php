@@ -361,7 +361,8 @@ class Business_Review {
 			case 'text':
 				?>
 				<div class="business_review_stars" data-rating="<?php echo $review_info['rating']; ?>" data-readonly="true"></div>
-				<?php echo $review->post_content; ?>
+				<?php $this->show_stars('small', $review_info['rating_avg']['value']);?>
+				<?php echo wp_trim_excerpt($review->post_excerpt);?>
 				<?php
 				break;
 		}
