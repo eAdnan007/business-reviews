@@ -41,6 +41,7 @@ class Business_Review {
 		}
 
 
+		add_action( 'init', array( $this, 'load_text_domain' ) );
 		add_action( 'init', array( $this, 'register_review_post_type' ) );
 		add_action( 'init', array( $this, 'update_settings' ) );
 		add_action( 'add_meta_boxes_business_review', array( $this, 'add_metaboxes' ) );
@@ -60,6 +61,14 @@ class Business_Review {
 		add_shortcode( 'business_reviews', array( $this, 'review_shortcode_content' ) );
 		add_shortcode( 'location_rating', array( $this, 'location_rating' ) );
 	}
+	
+	/**
+	 * Loads textdomain to make the plugin translation ready.
+	 */
+	public function load_text_domain() {
+		load_plugin_textdomain('business-review', false, basename( dirname( __FILE__ ) ) . '/languages' );
+	}
+	
 	/**
 	 * Register review post type to handle website reviews.
 	 */

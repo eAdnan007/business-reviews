@@ -1,0 +1,4326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Reviews v1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-04-10 16:03:26+0000\n"
+"Last-Translator: Mohaimenul Adnan <madnan@knockoutwebsolutions.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../../../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: br-config.php:105
+#: options/sample/sample-config-legacy.php:108
+#: options/sample/sample-config.php:2283
+#@ business-review
+#@ redux-framework-demo
+msgid "Section via hook"
+msgstr ""
+
+#: br-config.php:106
+#: options/sample/sample-config-legacy.php:109
+#: options/sample/sample-config.php:2284
+#@ business-review
+#@ redux-framework-demo
+msgid "<p class=\"description\">This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.</p>"
+msgstr ""
+
+#: br-config.php:186
+#: options/sample/sample-config-legacy.php:189
+#, php-format
+#@ business-review
+#@ redux-framework-demo
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: br-config.php:195
+#: br-config.php:199
+#: options/sample/sample-config-legacy.php:198
+#: options/sample/sample-config-legacy.php:202
+#@ business-review
+#@ redux-framework-demo
+msgid "Current theme preview"
+msgstr ""
+
+#: br-config.php:206
+#: options/sample/sample-config-legacy.php:209
+#, php-format
+#@ business-review
+#@ redux-framework-demo
+msgid "By %s"
+msgstr ""
+
+#: br-config.php:207
+#: options/ReduxCore/inc/welcome/views/about.php:8
+#: options/ReduxCore/inc/welcome/views/changelog.php:8
+#: options/ReduxCore/inc/welcome/views/credits.php:8
+#: options/ReduxCore/inc/welcome/views/extensions.php:82
+#: options/ReduxCore/inc/welcome/views/status_report.php:31
+#: options/ReduxCore/inc/welcome/views/support.php:8
+#: options/sample/sample-config-legacy.php:210
+#, php-format
+#@ business-review
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Version %s"
+msgstr ""
+
+#: br-config.php:208
+#: options/sample/sample-config-legacy.php:211
+#@ business-review
+#@ redux-framework-demo
+msgid "Tags"
+msgstr ""
+
+#: br-config.php:213
+#: options/sample/sample-config-legacy.php:216
+#, php-format
+#@ business-review
+#@ redux-framework-demo
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: br-config.php:213
+#: options/sample/sample-config-legacy.php:216
+#@ business-review
+#@ redux-framework-demo
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: br-config.php:234
+#: br-config.php:482
+#@ business-review
+msgid "Settings"
+msgstr ""
+
+#: br-config.php:240
+#@ business-review
+msgid "Locations"
+msgstr ""
+
+#: br-config.php:241
+#@ business-review
+msgid "Different locations where the business have brances."
+msgstr ""
+
+#: br-config.php:254
+#@ business-review
+msgid "Rating Criteria One Options"
+msgstr ""
+
+#: br-config.php:257
+#@ business-review
+msgid "Overall"
+msgstr ""
+
+#: br-config.php:258
+#@ business-review
+msgid "How would you rate your overall experience in the office?"
+msgstr ""
+
+#: br-config.php:262
+#: br-config.php:279
+#: br-config.php:296
+#: br-config.php:313
+#: br-config.php:330
+#@ business-review
+msgid "Weight"
+msgstr ""
+
+#: br-config.php:263
+#: br-config.php:280
+#: br-config.php:297
+#: br-config.php:314
+#: br-config.php:331
+#@ business-review
+msgid "Short Title"
+msgstr ""
+
+#: br-config.php:264
+#: br-config.php:281
+#: br-config.php:298
+#: br-config.php:315
+#: br-config.php:332
+#@ business-review
+msgid "Long Title"
+msgstr ""
+
+#: br-config.php:265
+#: br-config.php:282
+#: br-config.php:299
+#: br-config.php:316
+#: br-config.php:333
+#: options/ReduxCore/inc/fields/slides/field_slides.php:149
+#: options/ReduxCore/inc/fields/slides/field_slides.php:204
+#: options/sample/sample-config.php:1836
+#: options/sample/sample-config.php:1845
+#@ business-review
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Description"
+msgstr ""
+
+#: br-config.php:271
+#@ business-review
+msgid "Rating Criteria Two Options"
+msgstr ""
+
+#: br-config.php:274
+#@ business-review
+msgid "Front Desk"
+msgstr ""
+
+#: br-config.php:275
+#@ business-review
+msgid "How was your experience with the front desk staff?"
+msgstr ""
+
+#: br-config.php:288
+#@ business-review
+msgid "Rating Criteria Three Options"
+msgstr ""
+
+#: br-config.php:291
+#@ business-review
+msgid "Doctor"
+msgstr ""
+
+#: br-config.php:292
+#@ business-review
+msgid "How was your experience with the Doctor? (if applicable)"
+msgstr ""
+
+#: br-config.php:305
+#@ business-review
+msgid "Rating Criteria Four Options"
+msgstr ""
+
+#: br-config.php:308
+#@ business-review
+msgid "Optical Staff"
+msgstr ""
+
+#: br-config.php:309
+#@ business-review
+msgid "How was your experience with the Optical Staff?"
+msgstr ""
+
+#: br-config.php:322
+#@ business-review
+msgid "Rating Criteria Five Options"
+msgstr ""
+
+#: br-config.php:325
+#@ business-review
+msgid "Appearance"
+msgstr ""
+
+#: br-config.php:326
+#@ business-review
+msgid "How would you rate the overall appearance of the office?"
+msgstr ""
+
+#: br-config.php:339
+#@ business-review
+msgid "Satisfaction Threshold"
+msgstr ""
+
+#: br-config.php:340
+#@ business-review
+msgid "Minimum average rating to consider a review is positive."
+msgstr ""
+
+#: br-config.php:347
+#@ business-review
+msgid "Review Page"
+msgstr ""
+
+#: br-config.php:348
+#@ business-review
+msgid "The page where you placed the [business_review] shortcode to display reviews."
+msgstr ""
+
+#: br-config.php:353
+#@ business-review
+msgid "Show Gravatar"
+msgstr ""
+
+#: br-config.php:354
+#@ business-review
+msgid "Display the global avatar of the user."
+msgstr ""
+
+#: br-config.php:360
+#@ business-review
+msgid "Verify Negative Reviews"
+msgstr ""
+
+#: br-config.php:361
+#@ business-review
+msgid "Instead of directly publishing, keep reviews pending if it's negative."
+msgstr ""
+
+#: br-config.php:367
+#@ business-review
+msgid "Review Restriction Scope"
+msgstr ""
+
+#: br-config.php:368
+#@ business-review
+msgid "Let user post only one review in the site or one review per location."
+msgstr ""
+
+#: br-config.php:369
+#@ business-review
+msgid "One review per location"
+msgstr ""
+
+#: br-config.php:369
+#@ business-review
+msgid "Review only ones regardless of what location choosen"
+msgstr ""
+
+#: br-config.php:375
+#@ business-review
+msgid "One Review Per IP"
+msgstr ""
+
+#: br-config.php:376
+#@ business-review
+msgid "Prevent multiple reviews from single IP."
+msgstr ""
+
+#: br-config.php:382
+#@ business-review
+msgid "One Review Per Email"
+msgstr ""
+
+#: br-config.php:383
+#@ business-review
+msgid "Prevent multiple reviews from same email."
+msgstr ""
+
+#: br-config.php:389
+#@ business-review
+msgid "Thankyou Message for Positive Review"
+msgstr ""
+
+#: br-config.php:420
+#@ business-review
+msgid "Thankyou Message for Negative Review"
+msgstr ""
+
+#: br-config.php:421
+#@ business-review
+msgid ""
+"We are sorry to see that you were not satisfied with our service.\n"
+"                                            Before publishing this review, we will contact you trying to fix your issue if possible."
+msgstr ""
+
+#: br-config.php:427
+#@ business-review
+msgid "Already Reviewed Error Message"
+msgstr ""
+
+#: br-config.php:428
+#@ business-review
+msgid "We only accept one review per person to protect the integrity."
+msgstr ""
+
+#: br-config.php:433
+#@ business-review
+msgid "Custom CSS Code"
+msgstr ""
+
+#: br-config.php:434
+#: options/sample/sample-config-legacy.php:604
+#: options/sample/sample-config.php:580
+#@ business-review
+#@ redux-framework-demo
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: br-config.php:476
+#: br-config.php:479
+#@ business-review
+msgid "Business Reviews Settings"
+msgstr ""
+
+#: br-config.php:477
+#@ business-review
+msgid "Business Reviews"
+msgstr ""
+
+#: index.php:78
+#@ business-review
+msgctxt "Post Type General Name"
+msgid "Reviews"
+msgstr ""
+
+#: index.php:79
+#@ business-review
+msgctxt "Post Type Singular Name"
+msgid "Review"
+msgstr ""
+
+#: index.php:80
+#: index.php:93
+#@ business-review
+msgid "Business Review"
+msgstr ""
+
+#: index.php:81
+#@ business-review
+msgid "Parent Item:"
+msgstr ""
+
+#: index.php:82
+#@ business-review
+msgid "All Reviews"
+msgstr ""
+
+#: index.php:83
+#@ business-review
+msgid "View Review"
+msgstr ""
+
+#: index.php:84
+#@ business-review
+msgid "Add New Review"
+msgstr ""
+
+#: index.php:85
+#@ business-review
+msgid "Add New"
+msgstr ""
+
+#: index.php:86
+#@ business-review
+msgid "Edit Review"
+msgstr ""
+
+#: index.php:87
+#@ business-review
+msgid "Update Review"
+msgstr ""
+
+#: index.php:88
+#@ business-review
+msgid "Search Reviews"
+msgstr ""
+
+#: index.php:89
+#@ business-review
+msgid "Not found"
+msgstr ""
+
+#: index.php:90
+#@ business-review
+msgid "Not found in Trash"
+msgstr ""
+
+#: index.php:94
+#@ business-review
+msgid "Review of a business"
+msgstr ""
+
+#: index.php:124
+#@ business-review
+msgid "Reviewer IP"
+msgstr ""
+
+#: index.php:127
+#@ business-review
+msgid "Office Location"
+msgstr ""
+
+#: index.php:131
+#@ business-review
+msgid "First Name"
+msgstr ""
+
+#: index.php:134
+#@ business-review
+msgid "Last Name"
+msgstr ""
+
+#: index.php:137
+#@ business-review
+msgid "Email"
+msgstr ""
+
+#: index.php:141
+#@ business-review
+msgid "Phone Number"
+msgstr ""
+
+#: index.php:145
+#@ business-review
+msgid "Name of Employee"
+msgstr ""
+
+#: index.php:148
+#@ business-review
+msgid "Date of Visit"
+msgstr ""
+
+#: index.php:152
+#@ business-review
+msgid "Average Rating"
+msgstr ""
+
+#: index.php:189
+#@ business-review
+msgid "Review Information"
+msgstr ""
+
+#: index.php:249
+#: options/sample/sample-config.php:1242
+#@ business-review
+#@ redux-framework-demo
+msgid "Select"
+msgstr ""
+
+#: index.php:338
+#@ default
+msgid "Author"
+msgstr ""
+
+#: index.php:339
+#@ business-review
+msgid "Review"
+msgstr ""
+
+#: index.php:340
+#: options/sample/sample-config.php:1762
+#@ default
+#@ redux-framework-demo
+msgid "Date"
+msgstr ""
+
+#: index.php:365
+#@ default
+msgid "Edit"
+msgstr ""
+
+#: index.php:366
+#@ default
+msgid "Quick&nbsp;Edit"
+msgstr ""
+
+#: index.php:367
+#@ default
+msgid "Trash"
+msgstr ""
+
+#: index.php:369
+#@ default
+msgid "Restore"
+msgstr ""
+
+#: index.php:370
+#@ default
+msgid "Delete Permanently"
+msgstr ""
+
+#: index.php:517
+#@ business-review
+msgctxt "To specify location of review."
+msgid "on"
+msgstr ""
+
+#: index.php:531
+#@ business-review
+msgid "Submit Your Review"
+msgstr ""
+
+#: index.php:564
+#: options/ReduxCore/inc/fields/border/field_border.php:125
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:191
+#@ business-review
+#@ redux-framework
+msgid "All"
+msgstr ""
+
+#: index.php:592
+#@ business-review
+msgid "Please Let Us Know Your Feedback"
+msgstr ""
+
+#: index.php:716
+#@ business-review
+msgid "Comments"
+msgstr ""
+
+#: index.php:725
+#@ business-review
+msgid "Submit"
+msgstr ""
+
+#: index.php:1052
+#@ business-review
+msgid "Be the first one to review."
+msgstr ""
+
+#: index.php:1055
+#, php-format
+#@ business-review
+msgid "%0.2lf/5 from one rating."
+msgid_plural "%0.2lf/5 from %d ratings."
+msgstr[0] ""
+msgstr[1] ""
+
+#: options/ReduxCore/core/enqueue.php:397
+#: options/ReduxCore/inc/extensions/customizer/extension_customizer.php:562
+#@ redux-framework
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: options/ReduxCore/core/enqueue.php:405
+#: options/ReduxCore/inc/extensions/customizer/extension_customizer.php:563
+#@ redux-framework
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: options/ReduxCore/core/enqueue.php:413
+#@ redux-framework
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: options/ReduxCore/core/enqueue.php:421
+#: options/ReduxCore/inc/extensions/customizer/extension_customizer.php:564
+#@ redux-framework
+msgid "Your current options will be replaced with the values of this preset. Would you like to proceed?"
+msgstr ""
+
+#: options/ReduxCore/core/enqueue.php:428
+#@ redux-framework
+msgid "Please Wait"
+msgstr ""
+
+#: options/ReduxCore/core/enqueue.php:439
+#@ redux-framework
+msgid "There was an error saving. Here is the result of your action:"
+msgstr ""
+
+#: options/ReduxCore/core/enqueue.php:440
+#@ redux-framework
+msgid "There was a problem with your action. Please try again or reload the page."
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:65
+#@ redux-framework
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:141
+#@ redux-framework
+msgid "Settings Imported!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:156
+#@ redux-framework
+msgid "All Defaults Restored!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:170
+#@ redux-framework
+msgid "Section Defaults Restored!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:184
+#@ redux-framework
+msgid "Settings Saved!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:204
+#@ redux-framework
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:212
+#@ redux-framework
+msgid "error(s) were found!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:220
+#@ redux-framework
+msgid "warning(s) were found!"
+msgstr ""
+
+#: options/ReduxCore/core/panel.php:340
+#@ redux-framework
+msgid "<strong>Your panel has bundled outdated copies of Redux Framework template files</strong> &#8211; if you encounter functionality issues this could be the reason. Ensure you update or remove them."
+msgstr ""
+
+#: options/ReduxCore/framework.php:220
+#, php-format
+#@ redux-framework
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#. translators: plugin header field 'Name'
+#: options/ReduxCore/framework.php:220
+#: options/ReduxCore/inc/welcome/welcome.php:190
+#: options/redux-framework.php:0
+#@ redux-framework
+#@ business-review
+msgid "Redux Framework"
+msgstr ""
+
+#: options/ReduxCore/framework.php:224
+#: options/ReduxCore/framework.php:228
+#@ redux-framework
+msgid "Options"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1381
+#: options/ReduxCore/templates/panel/menu_container.tpl.php:63
+#@ redux-framework
+msgid "System Info"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1684
+#@ redux-framework
+msgid "Enable"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1689
+#@ redux-framework
+msgid "Disable"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1695
+#@ redux-framework
+msgid "moving the mouse over"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1697
+#@ redux-framework
+msgid "clicking"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1701
+#, php-format
+#@ redux-framework
+msgid "Hints are tooltips that popup when %d the hint icon, offering addition information about the field in which they appear.  They can be %d d by using the link below."
+msgstr ""
+
+#: options/ReduxCore/framework.php:1706
+#@ redux-framework
+msgid "Hints"
+msgstr ""
+
+#: options/ReduxCore/framework.php:1833
+#@ redux-framework
+msgid "Default"
+msgstr ""
+
+#: options/ReduxCore/framework.php:2672
+#@ redux-framework
+msgid "Invalid security credential, please reload the page and try again."
+msgstr ""
+
+#: options/ReduxCore/framework.php:2758
+#@ redux-framework
+msgid "Your panel has no fields. Nothing to save."
+msgstr ""
+
+#: options/ReduxCore/inc/class.redux_filesystem.php:23
+#@ redux-framework
+msgid "Unable to modify required files. Please ensure that"
+msgstr ""
+
+#: options/ReduxCore/inc/class.redux_filesystem.php:25
+#@ redux-framework
+msgid "has the proper read/write permissions or enter your FTP information below."
+msgstr ""
+
+#: options/ReduxCore/inc/class.redux_functions.php:237
+#@ redux-framework
+msgid "Dismiss"
+msgstr ""
+
+#: options/ReduxCore/inc/class.redux_helpers.php:583
+#, php-format
+#@ redux-framework
+msgid "<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of date. The core version is %s"
+msgstr ""
+
+#: options/ReduxCore/inc/class.redux_themecheck.php:61
+#, php-format
+#@ redux-framework
+msgid "The theme you are testing has %s embedded. We invite you to read the %sTheme-Check Documentation%s to understand some warnings you will see because of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/class.redux_themecheck.php:109
+#@ redux-framework
+msgid "The following directories & files are still located in your <strong>Redux</strong>  directory. They may cause errors in Theme-Check."
+msgstr ""
+
+#: options/ReduxCore/inc/debug.php:41
+#: options/ReduxCore/inc/debug.php:69
+#: options/ReduxCore/inc/debug.php:76
+#: options/ReduxCore/inc/debug.php:77
+#@ redux-framework
+msgid "Options Object"
+msgstr ""
+
+#: options/ReduxCore/inc/debug.php:54
+#@ redux-framework
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/customizer/extension_customizer.php:597
+#@ redux-framework
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/customizer/extension_customizer.php:598
+#@ redux-framework
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/customizer/extension_customizer.php:599
+#@ redux-framework
+msgid "Your current options will be replaced with the values of this preset.  Would you like to proceed?"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/extension_import_export.php:120
+#: options/sample/sample-config-legacy.php:1591
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Import / Export"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:106
+#@ redux-framework
+msgid "Import Options"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:107
+#@ redux-framework
+msgid "Import from File"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:107
+#@ redux-framework
+msgid "Import from URL"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:110
+#@ redux-framework
+msgid "Input your backup file below and hit Import to restore your sites options from a backup."
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:115
+#@ redux-framework
+msgid "Input the URL to another sites options set and hit Import to load the options from that site."
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:119
+#@ redux-framework
+msgid "Import"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:119
+#@ redux-framework
+msgid "WARNING! This will overwrite all existing option values, please proceed with caution!"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:122
+#@ redux-framework
+msgid "Export Options"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:124
+#@ redux-framework
+msgid "Here you can copy/download your current option settings. Keep this safe as you can use it as a backup should anything go wrong, or you can use it to restore your settings on this site (or any other site)."
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:129
+#@ redux-framework
+msgid "Copy Data"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:129
+#@ redux-framework
+msgid "Download Data File"
+msgstr ""
+
+#: options/ReduxCore/inc/extensions/import_export/import_export/field_import_export.php:129
+#@ redux-framework
+msgid "Copy Export URL"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:124
+#: options/ReduxCore/inc/fields/color/field_color.php:73
+#: options/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:79
+#: options/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:91
+#@ redux-framework
+msgid "Transparent"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:141
+#@ redux-framework
+msgid "Background Repeat"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:157
+#@ redux-framework
+msgid "Background Clip"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:173
+#@ redux-framework
+msgid "Background Origin"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:188
+#@ redux-framework
+msgid "Background Size"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:203
+#@ redux-framework
+msgid "Background Attachment"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:223
+#@ redux-framework
+msgid "Background Position"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:277
+#: options/ReduxCore/inc/fields/media/field_media.php:149
+#@ redux-framework
+msgid "No media selected"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:314
+#: options/ReduxCore/inc/fields/media/field_media.php:198
+#: options/ReduxCore/inc/fields/slides/field_slides.php:126
+#: options/ReduxCore/inc/fields/slides/field_slides.php:188
+#@ redux-framework
+msgid "Upload"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/background/field_background.php:321
+#: options/ReduxCore/inc/fields/media/field_media.php:205
+#: options/ReduxCore/inc/fields/multi_text/field_multi_text.php:69
+#: options/ReduxCore/inc/fields/multi_text/field_multi_text.php:73
+#: options/ReduxCore/inc/fields/multi_text/field_multi_text.php:76
+#: options/ReduxCore/inc/fields/slides/field_slides.php:133
+#: options/ReduxCore/inc/fields/slides/field_slides.php:190
+#@ redux-framework
+msgid "Remove"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/border/field_border.php:138
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:215
+#@ redux-framework
+msgid "Top"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/border/field_border.php:145
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:222
+#@ redux-framework
+msgid "Right"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/border/field_border.php:152
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:229
+#@ redux-framework
+msgid "Bottom"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/border/field_border.php:159
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:236
+#@ redux-framework
+msgid "Left"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/border/field_border.php:173
+#@ redux-framework
+msgid "Border style"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:68
+#@ redux-framework
+msgid "From "
+msgstr ""
+
+#: options/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:82
+#@ redux-framework
+msgid "To "
+msgstr ""
+
+#: options/ReduxCore/inc/fields/dimensions/field_dimensions.php:162
+#@ redux-framework
+msgid "Width"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/dimensions/field_dimensions.php:178
+#: options/ReduxCore/inc/fields/typography/field_typography.php:442
+#@ redux-framework
+msgid "Height"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/dimensions/field_dimensions.php:189
+#: options/ReduxCore/inc/fields/dimensions/field_dimensions.php:190
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:245
+#: options/ReduxCore/inc/fields/spacing/field_spacing.php:246
+#@ redux-framework
+msgid "Units"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/gallery/field_gallery.php:73
+#: options/sample/sample-config-legacy.php:313
+#: options/sample/sample-config.php:896
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/gallery/field_gallery.php:74
+#@ redux-framework
+msgid "Clear Gallery"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/link_color/field_link_color.php:87
+#@ redux-framework
+msgid "Regular"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/link_color/field_link_color.php:91
+#@ redux-framework
+msgid "Hover"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/link_color/field_link_color.php:95
+#@ redux-framework
+msgid "Visited"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/link_color/field_link_color.php:99
+#@ redux-framework
+msgid "Active"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/multi_text/field_multi_text.php:61
+#@ redux-framework
+msgid "Add More"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/password/field_password.php:62
+#: options/sample/sample-config.php:487
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Password"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/password/field_password.php:63
+#@ redux-framework
+msgid "Username"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/select/field_select.php:83
+#: options/ReduxCore/inc/fields/select_image/field_select_image.php:63
+#@ redux-framework
+msgid "Select an item"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/select/field_select.php:134
+#: options/ReduxCore/inc/fields/select_image/field_select_image.php:144
+#@ redux-framework
+msgid "No items of this type were found."
+msgstr ""
+
+#: options/ReduxCore/inc/fields/slides/field_slides.php:68
+#@ redux-framework
+msgid "Slide"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/slides/field_slides.php:73
+#: options/ReduxCore/inc/fields/slides/field_slides.php:174
+#, php-format
+#@ redux-framework
+msgid "New %s"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/slides/field_slides.php:145
+#: options/ReduxCore/inc/fields/slides/field_slides.php:200
+#@ redux-framework
+msgid "Title"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/slides/field_slides.php:153
+#: options/ReduxCore/inc/fields/slides/field_slides.php:207
+#@ redux-framework
+msgid "URL"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/slides/field_slides.php:167
+#: options/ReduxCore/inc/fields/slides/field_slides.php:220
+#@ redux-framework
+msgid "Delete"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/slides/field_slides.php:223
+#, php-format
+#@ redux-framework
+msgid "Add %s"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/switch/field_switch.php:41
+#@ redux-framework
+msgid "On"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/switch/field_switch.php:44
+#@ redux-framework
+msgid "Off"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:231
+#@ redux-framework
+msgid "Font Family"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:232
+#@ redux-framework
+msgid "Font family"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:258
+#: options/ReduxCore/inc/fields/typography/field_typography.php:259
+#@ redux-framework
+msgid "Backup Font Family"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:273
+#: options/ReduxCore/inc/fields/typography/field_typography.php:281
+#@ redux-framework
+msgid "Font style"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:274
+#@ redux-framework
+msgid "Font Weight &amp; Style"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:281
+#@ redux-framework
+msgid "Style"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:321
+#@ redux-framework
+msgid "Font subsets"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:323
+#@ redux-framework
+msgid "Font Subsets"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:325
+#@ redux-framework
+msgid "Subsets"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:325
+#@ redux-framework
+msgid "Font script"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:342
+#: options/ReduxCore/inc/fields/typography/field_typography.php:343
+#: options/ReduxCore/inc/fields/typography/field_typography.php:344
+#@ redux-framework
+msgid "Text Align"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:365
+#: options/ReduxCore/inc/fields/typography/field_typography.php:366
+#: options/ReduxCore/inc/fields/typography/field_typography.php:367
+#@ redux-framework
+msgid "Text Transform"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:388
+#: options/ReduxCore/inc/fields/typography/field_typography.php:389
+#: options/ReduxCore/inc/fields/typography/field_typography.php:390
+#@ redux-framework
+msgid "Font Variant"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:408
+#: options/ReduxCore/inc/fields/typography/field_typography.php:409
+#: options/ReduxCore/inc/fields/typography/field_typography.php:410
+#@ redux-framework
+msgid "Text Decoration"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:432
+#: options/ReduxCore/inc/fields/typography/field_typography.php:433
+#@ redux-framework
+msgid "Font Size"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:433
+#@ redux-framework
+msgid "Size"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:441
+#: options/ReduxCore/inc/fields/typography/field_typography.php:442
+#@ redux-framework
+msgid "Line Height"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:450
+#: options/ReduxCore/inc/fields/typography/field_typography.php:451
+#@ redux-framework
+msgid "Word Spacing"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:459
+#: options/ReduxCore/inc/fields/typography/field_typography.php:460
+#@ redux-framework
+msgid "Letter Spacing"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:478
+#@ redux-framework
+msgid "Font Color"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:480
+#@ redux-framework
+msgid "Font color"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:879
+#@ redux-framework
+msgid "Standard Fonts"
+msgstr ""
+
+#: options/ReduxCore/inc/fields/typography/field_typography.php:980
+#@ redux-framework
+msgid "Google Webfonts"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:129
+#@ redux-framework
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:130
+#@ redux-framework
+msgid "Please helps us improve our panel by allowing us to gather anonymous usage stats so we know which configurations, plugins and themes to test to ensure compatibility."
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:135
+#@ redux-framework
+msgid "Allow tracking"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:140
+#@ redux-framework
+msgid "Do not allow tracking"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:151
+#@ redux-framework
+msgid "Welcome to the Redux Demo Panel"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:152
+#@ redux-framework
+msgid "Getting Started"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:152
+#, php-format
+#@ redux-framework
+msgid "This panel demonstrates the many features of Redux.  Before digging in, we suggest you get up to speed by reviewing %1$s."
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:152
+#@ redux-framework
+msgid "our documentation"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:153
+#@ redux-framework
+msgid "Redux Generator"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:153
+#, php-format
+#@ redux-framework
+msgid "Want to get a head start? Use the %1$s. It will create a customized boilerplate theme or a standalone admin folder complete with all things Redux (with the help of Underscores and TGM). Save yourself a headache and try it today."
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:154
+#: options/ReduxCore/inc/welcome/welcome.php:214
+#@ redux-framework
+msgid "Redux Extensions"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:154
+#, php-format
+#@ redux-framework
+msgid "Did you know we have extensions, which greatly enhance the features of Redux?  Visit our %1$s to learn more!"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:154
+#@ redux-framework
+msgid "extensions directory"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:155
+#@ redux-framework
+msgid "Like Redux?"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:155
+#, php-format
+#@ redux-framework
+msgid "If so, please %1$s and consider making a %2$s to keep development of Redux moving forward."
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:155
+#@ redux-framework
+msgid "leave us a favorable review on WordPress.org"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:155
+#@ redux-framework
+msgid "donation"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:156
+#@ redux-framework
+msgid "Newsletter"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:156
+#@ redux-framework
+msgid "If you'd like to keep up to with all things Redux, please subscribe to our newsletter"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:157
+#@ redux-framework
+msgid "Email address"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:157
+#@ redux-framework
+msgid "Subscribe"
+msgstr ""
+
+#: options/ReduxCore/inc/tracking.php:166
+#@ redux-framework
+msgid "Close"
+msgstr ""
+
+#: options/ReduxCore/inc/validation/color/validation_color.php:15
+#: options/ReduxCore/inc/validation/color_rgba/validation_color_rgba.php:14
+#: options/ReduxCore/inc/validation/colorrgba/validation_colorrgba.php:16
+#@ redux-framework
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/comma_numeric/validation_comma_numeric.php:16
+#@ redux-framework
+msgid "You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/css/validation_css.php:38
+#@ redux-framework
+msgid "Unsafe strings were found in your CSS and have been filtered out."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/date/validation_date.php:16
+#@ redux-framework
+msgid "This field must be a valid date."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/email/validation_email.php:16
+#: options/ReduxCore/inc/validation/email_not_empty/validation_email_not_empty.php:16
+#@ redux-framework
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/no_html/validation_no_html.php:15
+#@ redux-framework
+msgid "You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/no_special_chars/validation_no_special_chars.php:16
+#@ redux-framework
+msgid "You must not enter any special characters in this field, all special characters have been removed."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/not_empty/validation_not_empty.php:16
+#@ redux-framework
+msgid "This field cannot be empty. Please provide a value."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/numeric/validation_numeric.php:16
+#: options/ReduxCore/inc/validation/numeric_not_empty/validation_numeric_not_empty.php:16
+#@ redux-framework
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/unique_slug/validation_unique_slug.php:16
+#, php-format
+#@ redux-framework
+msgid "That URL slug is in use, please choose another. <code>%s</code> is open for use."
+msgstr ""
+
+#: options/ReduxCore/inc/validation/url/validation_url.php:16
+#@ redux-framework
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/about.php:2
+#, php-format
+#@ redux-framework
+msgid "Welcome to Redux Framework %s"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/about.php:5
+#, php-format
+#@ redux-framework
+msgid "Thank you for updating to the latest version! Redux Framework %s is a huge step forward in Redux Development. Look at all that's new."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/about.php:15
+#@ redux-framework
+msgid "What is Redux Framework?"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/about.php:17
+#@ redux-framework
+msgid ""
+"Redux Framework is the core of many products on the web. It is an option framework which developers use to\n"
+"            enhance their products."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/about.php:22
+#@ redux-framework
+msgid "Learn More"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/about.php:28
+#@ redux-framework
+msgid "New in this Release"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/changelog.php:2
+#@ redux-framework
+msgid "Redux Framework - Changelog"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/changelog.php:5
+#: options/ReduxCore/inc/welcome/views/status_report.php:28
+#@ redux-framework
+msgid "Our core mantra at Redux is backwards compatibility. With hundreds of thousands of instances worldwide, you can be assured that we will take care of you and your clients."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/credits.php:2
+#@ redux-framework
+msgid "Redux Framework - A Community Effort"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/credits.php:5
+#@ redux-framework
+msgid "We recognize we are nothing without our community. We would like to thank all of those who help Redux to be what it is. Thank you for your involvement."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/credits.php:14
+#@ redux-framework
+msgid "Redux is created by a community of developers world wide. Want to have your name listed too? <a href=\"https://github.com/reduxframework/redux-framework/blob/master/CONTRIBUTING.md\" target=\"_blank\">Contribute to Redux</a>."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/extensions.php:76
+#@ redux-framework
+msgid "Redux Framework - Extensions"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/extensions.php:79
+#@ redux-framework
+msgid "Supercharge your Redux experience. Our extensions provide you with features that will take your products to the next level."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/extensions.php:88
+#@ redux-framework
+msgid "While some are built specificially for developers, extensions such as Custom Fonts are sure to make any user happy."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:25
+#@ redux-framework
+msgid "Redux Framework - System Status"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:38
+#@ redux-framework
+msgid "Please copy and paste this information in your ticket when contacting support:"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:41
+#@ redux-framework
+msgid "Get System Report"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:44
+#@ redux-framework
+msgid "Understanding the Status Report"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:51
+#@ redux-framework
+msgid "Copied!"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:51
+#@ redux-framework
+msgid "Copy for Support"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:60
+#@ redux-framework
+msgid "WordPress Environment"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:65
+#@ redux-framework
+msgid "Home URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:66
+#@ redux-framework
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:70
+#@ redux-framework
+msgid "Site URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:71
+#@ redux-framework
+msgid "The root URL of your site."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:75
+#@ redux-framework
+msgid "Redux Version"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:76
+#@ redux-framework
+msgid "The version of Redux Framework installed on your site."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:80
+#@ redux-framework
+msgid "Redux Data Directory Writable"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:83
+#@ redux-framework
+msgid "Redux and its extensions write data to the <code>uploads</code> directory. This directory must be writable."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:88
+#, php-format
+#@ redux-framework
+msgid "To allow data saving, make <code>%s</code> writable."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:93
+#@ redux-framework
+msgid "WP Content URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:96
+#@ redux-framework
+msgid "The location of Wordpress's content URL."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:102
+#@ redux-framework
+msgid "WP Version"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:103
+#@ redux-framework
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:107
+#@ redux-framework
+msgid "WP Multisite"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:108
+#@ redux-framework
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:116
+#@ redux-framework
+msgid "Permalink Structure"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:117
+#@ redux-framework
+msgid "The current permalink structure as defined in Wordpress Settings->Permalinks."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:122
+#@ redux-framework
+msgid "Front Page Display"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:123
+#@ redux-framework
+msgid "The current Reading mode of Wordpress."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:131
+#@ redux-framework
+msgid "Front Page"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:132
+#@ redux-framework
+msgid "The currently selected page which acts as the site's Front Page."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:136
+#@ redux-framework
+msgid "Posts Page"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:137
+#@ redux-framework
+msgid "The currently selected page in where blog posts are displayed."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:144
+#@ redux-framework
+msgid "WP Memory Limit"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:145
+#@ redux-framework
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:150
+#, php-format
+#@ redux-framework
+msgid "%s - We recommend setting memory to at least 40MB. See: <a href=\"%s\" target=\"_blank\">Increasing memory allocated to PHP</a>"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:157
+#@ redux-framework
+msgid "Database Table Prefix"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:159
+#@ redux-framework
+msgid "The prefix structure of the current Wordpress database."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:163
+#@ redux-framework
+msgid "WP Debug Mode"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:164
+#@ redux-framework
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:172
+#@ redux-framework
+msgid "Language"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:173
+#@ redux-framework
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:181
+#@ redux-framework
+msgid "Browser"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:186
+#@ redux-framework
+msgid "Browser Info"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:187
+#@ redux-framework
+msgid "Information about web browser current in use."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:202
+#@ redux-framework
+msgid "Server Environment"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:207
+#@ redux-framework
+msgid "Server Info"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:208
+#@ redux-framework
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:212
+#@ redux-framework
+msgid "Localhost Environment"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:213
+#@ redux-framework
+msgid "Is the server running in a localhost environment."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:223
+#@ redux-framework
+msgid "PHP Version"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:224
+#@ redux-framework
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:228
+#@ redux-framework
+msgid "ABSPATH"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:229
+#@ redux-framework
+msgid "The ABSPATH variable on the server."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:235
+#@ redux-framework
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:236
+#: options/ReduxCore/inc/welcome/views/status_report.php:241
+#@ redux-framework
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:240
+#@ redux-framework
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:245
+#@ redux-framework
+msgid "PHP Time Limit"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:246
+#@ redux-framework
+msgid "The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:250
+#@ redux-framework
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:251
+#@ redux-framework
+msgid "The maximum number of variables your server can use for a single function to avoid overloads."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:255
+#@ redux-framework
+msgid "PHP Display Errors"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:256
+#@ redux-framework
+msgid "Determines if PHP will display errors within the browser."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:267
+#@ redux-framework
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:268
+#@ redux-framework
+msgid "Suhosin is an advanced protection system for PHP installations. It was designed to protect your servers on the one hand against a number of well known problems in PHP applications and on the other hand against potential unknown vulnerabilities within these applications or the PHP core itself.  If enabled on your server, Suhosin may need to be configured to increase its data submission limits."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:277
+#@ redux-framework
+msgid "MySQL Version"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:278
+#@ redux-framework
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:282
+#@ redux-framework
+msgid "Max Upload Size"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:283
+#@ redux-framework
+msgid "The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:287
+#@ redux-framework
+msgid "Default Timezone is UTC"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:290
+#@ redux-framework
+msgid "The default timezone for your server."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:293
+#, php-format
+#@ redux-framework
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:304
+#@ redux-framework
+msgid "Used when communicating with remote services with PHP."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:310
+#@ redux-framework
+msgid "Your server does not have fsockopen or cURL enabled - cURL is used to communicate with other servers. Please contact your hosting provider."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:349
+#@ redux-framework
+msgid "Remote Post"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:350
+#@ redux-framework
+msgid "Used to send data to remote servers."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:355
+#@ redux-framework
+msgid "wp_remote_post() failed. Many advanced features may not function. Contact your hosting provider."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:358
+#: options/ReduxCore/inc/welcome/views/status_report.php:373
+#, php-format
+#@ redux-framework
+msgid "Error: %s"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:365
+#@ redux-framework
+msgid "Remote Get"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:366
+#@ redux-framework
+msgid "Used to grab information from remote servers for updates updates."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:371
+#@ redux-framework
+msgid "wp_remote_get() failed. This is needed to get information from remote servers. Contact your hosting provider."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:405
+#@ redux-framework
+msgid "Active Plugins"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:421
+#@ redux-framework
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:427
+#, php-format
+#@ redux-framework
+msgctxt "by author"
+msgid "by %s"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:445
+#@ redux-framework
+msgid "Redux Instance: "
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:452
+#@ redux-framework
+msgid "The opt_name argument for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:460
+#@ redux-framework
+msgid "The global_variable argument for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:468
+#@ redux-framework
+msgid "Indicates if developer mode is enabled for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:473
+#@ redux-framework
+msgid "Indicates if ajax based saving is enabled for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:478
+#@ redux-framework
+msgid "The page slug denotes the string used for the options panel page for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:483
+#@ redux-framework
+msgid "The page permissions variable sets the permission level required to access the options panel for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:488
+#@ redux-framework
+msgid "This variable set whether or not the menu is displayed as an admin menu item for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:493
+#@ redux-framework
+msgid "The page parent variable sets where the options menu will be placed on the WordPress admin sidebar for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:499
+#@ redux-framework
+msgid "Indicates if the compiler flag is enabled for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:504
+#@ redux-framework
+msgid "Indicates if output flag for globally shutting off all CSS output is enabled for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:509
+#@ redux-framework
+msgid "The output_tag variable sets whether or not dynamic CSS will be generated for the customizer and Google fonts for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:518
+#@ redux-framework
+msgid "The specified template path containing custom template files for this instance of Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:523
+#@ redux-framework
+msgid "List of template files overriding the default Redux template files."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:546
+#@ redux-framework
+msgid "Indicates the installed Redux extensions and their version numbers."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:577
+#@ redux-framework
+msgid "Theme"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:582
+#@ redux-framework
+msgid "Name"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:583
+#@ redux-framework
+msgid "The name of the current active theme."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:587
+#@ redux-framework
+msgid "Version"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:588
+#@ redux-framework
+msgid "The installed version of the current active theme."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:593
+#@ redux-framework
+msgid "is available"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:598
+#@ redux-framework
+msgid "Author URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:599
+#@ redux-framework
+msgid "The theme developers URL."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:603
+#@ redux-framework
+msgid "Child Theme"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:604
+#@ redux-framework
+msgid "Displays whether or not the current theme is a child theme."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:606
+#, php-format
+#@ redux-framework
+msgid "If you're modifying Redux Framework or a parent theme you didn't build personally, we recommend using a child theme. See: <a href=\"%s\" target=\"_blank\">How to create a child theme</a>"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:614
+#@ redux-framework
+msgid "Parent Theme Name"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:616
+#@ redux-framework
+msgid "The name of the parent theme."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:620
+#@ redux-framework
+msgid "Parent Theme Version"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:623
+#@ redux-framework
+msgid "The installed version of the parent theme."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:627
+#@ redux-framework
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/status_report.php:630
+#@ redux-framework
+msgid "The parent theme developers URL."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:2
+#@ redux-framework
+msgid "Redux Framework - Support"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:5
+#@ redux-framework
+msgid "We are an open source project used by developers to make powerful control panels."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:20
+#@ redux-framework
+msgid "Generate a Support URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:21
+#@ redux-framework
+msgid "Select Support Type"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:22
+#: options/ReduxCore/inc/welcome/views/support.php:65
+#@ redux-framework
+msgid "How to Get Support"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:27
+#@ redux-framework
+msgid "Submit a Support Request"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:30
+#@ redux-framework
+msgid "To get started, we will need to generate a support hash."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:33
+#, php-format
+#@ redux-framework
+msgid "This will provide to your developer all the information they may need to remedy your issue. This action WILL send information securely to a remote server. To see the type of information sent, please look at the  <a href=\"%s\">Status tab</a>."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:37
+#@ redux-framework
+msgid ""
+"Generate\n"
+"                        a Support URL"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:44
+#@ redux-framework
+msgid "Select Your Support Type"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:47
+#@ redux-framework
+msgid "What type of user are you?"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:52
+#@ redux-framework
+msgid "User"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:53
+#@ redux-framework
+msgid "I am a user, using a pre-built product."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:56
+#@ redux-framework
+msgid "Developer"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:57
+#@ redux-framework
+msgid "I am a developer, building a product using Redux."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:68
+#@ redux-framework
+msgid "Please proceed to the Redux Framework issue tracker and supply us with your support URL below. Please also provide any information that will help us to reproduce your issue."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:74
+#@ redux-framework
+msgid "Listed below are the Wordpress plugins and/or theme installed on your site that utilize Redux Framework. We do not directly support products created with our framework.  It is the responsibility of the plugin or theme developer to support their work. You will need to contact the author(s) of the products listed below with your support questions."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:77
+#@ redux-framework
+msgid "Please be sure to include for your developer - via cut and paste - the Support URL in the box below."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/views/support.php:215
+#, php-format
+#@ redux-framework
+msgid "Should the developer not be responsive, read the <a href=\"%s\" target=\"_blank\">following article</a> before asking for support from us directly."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:170
+#@ redux-framework
+msgid "Support hash could not be generated. Please try again later."
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:190
+#@ redux-framework
+msgid "Welcome to Redux Framework"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:198
+#@ redux-framework
+msgid "Redux Framework Changelog"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:206
+#: options/class.redux-plugin.php:411
+#@ redux-framework
+msgid "Get Support"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:223
+#@ redux-framework
+msgid "The people that develop Redux Framework"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:231
+#@ redux-framework
+msgid "Redux Framework Status"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:336
+#@ redux-framework
+msgid "What's New"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:340
+#: options/sample/barebones-config.php:150
+#: options/sample/sample-config-legacy.php:1783
+#: options/sample/sample-config.php:213
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Extensions"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:344
+#@ redux-framework
+msgid "Changelog"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:348
+#@ redux-framework
+msgid "Credits"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:352
+#: options/sample/barebones-config.php:144
+#: options/sample/sample-config-legacy.php:1777
+#: options/sample/sample-config.php:207
+#@ redux-framework
+#@ redux-framework-demo
+msgid "Support"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:356
+#@ redux-framework
+msgid "Status"
+msgstr ""
+
+#: options/ReduxCore/inc/welcome/welcome.php:513
+#, php-format
+#@ redux-framework
+msgid "View %s"
+msgstr ""
+
+#: options/ReduxCore/templates/panel/footer.tpl.php:43
+#: options/ReduxCore/templates/panel/header_stickybar.tpl.php:20
+#@ redux-framework
+msgid "Save Changes"
+msgstr ""
+
+#: options/ReduxCore/templates/panel/footer.tpl.php:46
+#: options/ReduxCore/templates/panel/header_stickybar.tpl.php:22
+#@ redux-framework
+msgid "Reset Section"
+msgstr ""
+
+#: options/ReduxCore/templates/panel/footer.tpl.php:47
+#: options/ReduxCore/templates/panel/header_stickybar.tpl.php:23
+#@ redux-framework
+msgid "Reset All"
+msgstr ""
+
+#: options/ReduxCore/templates/panel/footer.tpl.php:52
+#: options/ReduxCore/templates/panel/header_stickybar.tpl.php:26
+#@ redux-framework
+msgid "Working..."
+msgstr ""
+
+#: options/ReduxCore/templates/panel/header.tpl.php:18
+#@ redux-framework
+msgid "Developer Mode Enabled"
+msgstr ""
+
+#: options/ReduxCore/templates/panel/header_stickybar.tpl.php:16
+#@ redux-framework
+msgid "Expand"
+msgstr ""
+
+#: options/class.redux-plugin.php:307
+#@ redux-framework
+msgid "Redux Framework has an embedded demo."
+msgstr ""
+
+#: options/class.redux-plugin.php:307
+#@ redux-framework
+msgid "Click here to activate the sample config file."
+msgstr ""
+
+#: options/class.redux-plugin.php:408
+#@ redux-framework
+msgid "Docs"
+msgstr ""
+
+#: options/class.redux-plugin.php:409
+#@ redux-framework
+msgid "Repo"
+msgstr ""
+
+#: options/class.redux-plugin.php:410
+#@ redux-framework
+msgid "Builder"
+msgstr ""
+
+#: options/class.redux-plugin.php:416
+#@ redux-framework
+msgid "Deactivate Demo Mode"
+msgstr ""
+
+#: options/class.redux-plugin.php:418
+#@ redux-framework
+msgid "Activate Demo Mode"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: options/redux-framework.php:0
+#@ business-review
+msgid "http://wordpress.org/plugins/redux-framework"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: options/redux-framework.php:0
+#@ business-review
+msgid "Redux is a simple, truly extensible options framework for WordPress themes and plugins."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: options/redux-framework.php:0
+#@ business-review
+msgid "Team Redux"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: options/redux-framework.php:0
+#@ business-review
+msgid "http://reduxframework.com"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: options/redux-framework.php:0
+#@ business-review
+msgid "3.5.0.5"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:55
+#: options/sample/sample-config-legacy.php:239
+#@ redux-framework-demo
+msgid "Home Settings"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:56
+#: options/sample/sample-config-legacy.php:1565
+#: options/sample/sample-config.php:2149
+#@ redux-framework-demo
+msgid "These fields can be fully translated by WPML (WordPress Multi-Language). This serves as an example for you to implement. For extra details look at our <a href=\"http://docs.reduxframework.com/core/advanced/wpml-integration/\" target=\"_blank\">WPML Implementation</a> documentation."
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:64
+#: options/sample/barebones-config.php:247
+#@ redux-framework-demo
+msgid "Example Text"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:67
+#: options/sample/barebones-config.php:248
+#@ redux-framework-demo
+msgid "Example description."
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:68
+#: options/sample/barebones-config.php:249
+#@ redux-framework-demo
+msgid "Example subtitle."
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:78
+#: options/sample/sample-config-legacy.php:1564
+#@ redux-framework-demo
+msgid "WPML Example"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:79
+#@ redux-framework-demo
+msgid "These fields can be fully translated by WPML (WordPress Multi-Language). This serves as an example for you to implement."
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:86
+#: options/sample/sample-config-legacy.php:1572
+#: options/sample/sample-config.php:2156
+#@ redux-framework-demo
+msgid "WPML Text"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:87
+#: options/sample/sample-config-legacy.php:1573
+#: options/sample/sample-config.php:2157
+#@ redux-framework-demo
+msgid "This string can be translated via WPML."
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:92
+#: options/sample/sample-config-legacy.php:1578
+#: options/sample/sample-config.php:2162
+#@ redux-framework-demo
+msgid "WPML Multi Checkbox"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:93
+#: options/sample/sample-config-legacy.php:1579
+#: options/sample/sample-config.php:2163
+#@ redux-framework-demo
+msgid "You can literally translate the values via key."
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:110
+#: options/sample/barebones-config.php:204
+#: options/sample/sample-config-legacy.php:1636
+#: options/sample/sample-config.php:268
+#@ redux-framework-demo
+msgid "Theme Information 1"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:111
+#: options/sample/barebones-config-legacy.php:117
+#: options/sample/barebones-config.php:205
+#: options/sample/barebones-config.php:210
+#: options/sample/sample-config-legacy.php:1637
+#: options/sample/sample-config-legacy.php:1643
+#: options/sample/sample-config.php:269
+#: options/sample/sample-config.php:274
+#@ redux-framework-demo
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:116
+#: options/sample/barebones-config.php:209
+#: options/sample/sample-config-legacy.php:1642
+#: options/sample/sample-config.php:273
+#@ redux-framework-demo
+msgid "Theme Information 2"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:121
+#: options/sample/barebones-config.php:216
+#: options/sample/sample-config-legacy.php:1647
+#: options/sample/sample-config.php:280
+#@ redux-framework-demo
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:144
+#: options/sample/barebones-config-legacy.php:145
+#: options/sample/barebones-config.php:35
+#: options/sample/barebones-config.php:36
+#: options/sample/sample-config-legacy.php:1670
+#: options/sample/sample-config-legacy.php:1671
+#: options/sample/sample-config.php:98
+#: options/sample/sample-config.php:99
+#@ redux-framework-demo
+msgid "Sample Options"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:262
+#: options/sample/barebones-config.php:183
+#: options/sample/sample-config-legacy.php:1816
+#: options/sample/sample-config.php:246
+#, php-format
+#@ redux-framework-demo
+msgid "<p>Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:264
+#: options/sample/barebones-config.php:185
+#: options/sample/sample-config-legacy.php:1818
+#: options/sample/sample-config.php:248
+#@ redux-framework-demo
+msgid "<p>This text is displayed above the options panel. It isn't required, but more info is always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: options/sample/barebones-config-legacy.php:268
+#: options/sample/barebones-config.php:189
+#: options/sample/sample-config-legacy.php:1822
+#: options/sample/sample-config.php:252
+#@ redux-framework-demo
+msgid "<p>This text is displayed below the options panel. It isn't required, but more info is always better! The footer_text field accepts all HTML.</p>"
+msgstr ""
+
+#: options/sample/barebones-config.php:138
+#: options/sample/sample-config-legacy.php:1368
+#: options/sample/sample-config-legacy.php:1625
+#: options/sample/sample-config-legacy.php:1771
+#: options/sample/sample-config.php:201
+#: options/sample/sample-config.php:2201
+#@ redux-framework-demo
+msgid "Documentation"
+msgstr ""
+
+#: options/sample/barebones-config.php:240
+#@ redux-framework-demo
+msgid "Basic Field"
+msgstr ""
+
+#: options/sample/barebones-config.php:242
+#@ redux-framework-demo
+msgid "Basic field with no subsections."
+msgstr ""
+
+#: options/sample/barebones-config.php:257
+#: options/sample/sample-config.php:305
+#@ redux-framework-demo
+msgid "Basic Fields"
+msgstr ""
+
+#: options/sample/barebones-config.php:259
+#@ redux-framework-demo
+msgid "Basic fields as subsections."
+msgstr ""
+
+#: options/sample/barebones-config.php:264
+#: options/sample/sample-config.php:434
+#@ redux-framework-demo
+msgid "Text"
+msgstr ""
+
+#: options/sample/barebones-config.php:265
+#: options/sample/barebones-config.php:282
+#: options/sample/sample-config.php:315
+#: options/sample/sample-config.php:366
+#: options/sample/sample-config.php:396
+#: options/sample/sample-config.php:435
+#: options/sample/sample-config.php:474
+#: options/sample/sample-config.php:489
+#: options/sample/sample-config.php:508
+#: options/sample/sample-config.php:533
+#: options/sample/sample-config.php:566
+#: options/sample/sample-config.php:624
+#: options/sample/sample-config.php:647
+#: options/sample/sample-config.php:666
+#: options/sample/sample-config.php:687
+#: options/sample/sample-config.php:734
+#: options/sample/sample-config.php:740
+#: options/sample/sample-config.php:784
+#: options/sample/sample-config.php:820
+#: options/sample/sample-config.php:890
+#: options/sample/sample-config.php:906
+#: options/sample/sample-config.php:959
+#: options/sample/sample-config.php:988
+#: options/sample/sample-config.php:1001
+#: options/sample/sample-config.php:1096
+#: options/sample/sample-config.php:1146
+#: options/sample/sample-config.php:1185
+#: options/sample/sample-config.php:1244
+#: options/sample/sample-config.php:1469
+#: options/sample/sample-config.php:1564
+#: options/sample/sample-config.php:1598
+#: options/sample/sample-config.php:1662
+#: options/sample/sample-config.php:1682
+#: options/sample/sample-config.php:1764
+#: options/sample/sample-config.php:1780
+#: options/sample/sample-config.php:1828
+#: options/sample/sample-config.php:1860
+#@ redux-framework-demo
+msgid "For full documentation on this field, visit: "
+msgstr ""
+
+#: options/sample/barebones-config.php:272
+#: options/sample/sample-config.php:442
+#: options/sample/sample-config.php:462
+#@ redux-framework-demo
+msgid "Text Field"
+msgstr ""
+
+#: options/sample/barebones-config.php:273
+#: options/sample/barebones-config.php:290
+#: options/sample/sample-config.php:443
+#: options/sample/sample-config.php:451
+#: options/sample/sample-config.php:463
+#: options/sample/sample-config.php:515
+#: options/sample/sample-config.php:1835
+#: options/sample/sample-config.php:1844
+#@ redux-framework-demo
+msgid "Subtitle"
+msgstr ""
+
+#: options/sample/barebones-config.php:274
+#: options/sample/barebones-config.php:291
+#: options/sample/sample-config.php:444
+#: options/sample/sample-config.php:452
+#: options/sample/sample-config.php:464
+#@ redux-framework-demo
+msgid "Field Description"
+msgstr ""
+
+#: options/sample/barebones-config.php:281
+#@ redux-framework-demo
+msgid "Text Area"
+msgstr ""
+
+#: options/sample/barebones-config.php:289
+#@ redux-framework-demo
+msgid "Text Area Field"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:240
+#@ redux-framework-demo
+msgid "Redux Framework was created with the developer in mind. It allows for any theme developer to have an advanced theme panel with most of the features a developer would need. For more information check out the Github repo at: <a href=\"https://github.com/ReduxFramework/Redux-Framework\">https://github.com/ReduxFramework/Redux-Framework</a>"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:248
+#@ redux-framework-demo
+msgid "Web Fonts"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:252
+#: options/sample/sample-config-legacy.php:281
+#: options/sample/sample-config.php:916
+#: options/sample/sample-config.php:950
+#@ redux-framework-demo
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:253
+#: options/sample/sample-config-legacy.php:282
+#: options/sample/sample-config-legacy.php:300
+#: options/sample/sample-config-legacy.php:308
+#: options/sample/sample-config.php:917
+#: options/sample/sample-config.php:929
+#: options/sample/sample-config.php:937
+#: options/sample/sample-config.php:951
+#@ redux-framework-demo
+msgid "Upload any media using the WordPress native uploader"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:262
+#@ redux-framework-demo
+msgid "Section Show"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:263
+#: options/sample/sample-config-legacy.php:270
+#@ redux-framework-demo
+msgid "With the \"section\" field you can create indent option sections."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:269
+#@ redux-framework-demo
+msgid "Media Options"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:278
+#: options/sample/sample-config.php:913
+#@ redux-framework-demo
+msgid "Media w/ URL"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:298
+#: options/sample/sample-config.php:927
+#@ redux-framework-demo
+msgid "Media w/o URL"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:299
+#: options/sample/sample-config-legacy.php:307
+#: options/sample/sample-config.php:928
+#: options/sample/sample-config.php:936
+#@ redux-framework-demo
+msgid "This represents the minimalistic view. It does not have the preview box or the display URL in an input box. "
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:306
+#: options/sample/sample-config.php:935
+#@ redux-framework-demo
+msgid "Media No Preview"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:314
+#: options/sample/sample-config.php:897
+#@ redux-framework-demo
+msgid "Create a new Gallery by selecting existing or uploading new images using the WordPress native uploader"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:315
+#: options/sample/sample-config-legacy.php:705
+#: options/sample/sample-config-legacy.php:716
+#: options/sample/sample-config-legacy.php:734
+#: options/sample/sample-config-legacy.php:832
+#: options/sample/sample-config-legacy.php:846
+#: options/sample/sample-config-legacy.php:855
+#: options/sample/sample-config-legacy.php:862
+#: options/sample/sample-config-legacy.php:875
+#: options/sample/sample-config-legacy.php:884
+#: options/sample/sample-config-legacy.php:893
+#: options/sample/sample-config-legacy.php:915
+#: options/sample/sample-config-legacy.php:928
+#: options/sample/sample-config-legacy.php:937
+#: options/sample/sample-config-legacy.php:952
+#: options/sample/sample-config-legacy.php:961
+#: options/sample/sample-config-legacy.php:970
+#: options/sample/sample-config-legacy.php:980
+#: options/sample/sample-config-legacy.php:996
+#: options/sample/sample-config-legacy.php:1004
+#: options/sample/sample-config-legacy.php:1023
+#: options/sample/sample-config-legacy.php:1031
+#: options/sample/sample-config-legacy.php:1039
+#: options/sample/sample-config-legacy.php:1053
+#: options/sample/sample-config-legacy.php:1061
+#: options/sample/sample-config-legacy.php:1111
+#: options/sample/sample-config-legacy.php:1125
+#: options/sample/sample-config-legacy.php:1145
+#: options/sample/sample-config-legacy.php:1159
+#: options/sample/sample-config-legacy.php:1187
+#: options/sample/sample-config-legacy.php:1220
+#: options/sample/sample-config-legacy.php:1229
+#: options/sample/sample-config-legacy.php:1237
+#: options/sample/sample-config-legacy.php:1246
+#: options/sample/sample-config-legacy.php:1254
+#: options/sample/sample-config-legacy.php:1263
+#: options/sample/sample-config-legacy.php:1271
+#: options/sample/sample-config-legacy.php:1280
+#: options/sample/sample-config-legacy.php:1288
+#: options/sample/sample-config-legacy.php:1297
+#: options/sample/sample-config-legacy.php:1307
+#: options/sample/sample-config-legacy.php:1315
+#: options/sample/sample-config-legacy.php:1324
+#: options/sample/sample-config-legacy.php:1332
+#: options/sample/sample-config-legacy.php:1341
+#: options/sample/sample-config-legacy.php:1391
+#: options/sample/sample-config-legacy.php:1402
+#: options/sample/sample-config-legacy.php:1416
+#: options/sample/sample-config.php:322
+#: options/sample/sample-config.php:330
+#: options/sample/sample-config.php:349
+#: options/sample/sample-config.php:357
+#: options/sample/sample-config.php:373
+#: options/sample/sample-config.php:387
+#: options/sample/sample-config.php:403
+#: options/sample/sample-config.php:417
+#: options/sample/sample-config.php:516
+#: options/sample/sample-config.php:656
+#: options/sample/sample-config.php:696
+#: options/sample/sample-config.php:750
+#: options/sample/sample-config.php:768
+#: options/sample/sample-config.php:898
+#: options/sample/sample-config.php:1154
+#: options/sample/sample-config.php:1168
+#: options/sample/sample-config.php:1253
+#: options/sample/sample-config.php:1275
+#: options/sample/sample-config.php:1300
+#: options/sample/sample-config.php:1333
+#: options/sample/sample-config.php:1342
+#: options/sample/sample-config.php:1350
+#: options/sample/sample-config.php:1359
+#: options/sample/sample-config.php:1367
+#: options/sample/sample-config.php:1376
+#: options/sample/sample-config.php:1384
+#: options/sample/sample-config.php:1393
+#: options/sample/sample-config.php:1401
+#: options/sample/sample-config.php:1410
+#: options/sample/sample-config.php:1420
+#: options/sample/sample-config.php:1428
+#: options/sample/sample-config.php:1437
+#: options/sample/sample-config.php:1445
+#: options/sample/sample-config.php:1454
+#: options/sample/sample-config.php:1523
+#: options/sample/sample-config.php:1772
+#: options/sample/sample-config.php:1886
+#: options/sample/sample-config.php:1896
+#: options/sample/sample-config.php:1905
+#: options/sample/sample-config.php:1912
+#: options/sample/sample-config.php:1921
+#: options/sample/sample-config.php:1930
+#: options/sample/sample-config.php:1939
+#: options/sample/sample-config.php:1961
+#: options/sample/sample-config.php:1998
+#: options/sample/sample-config.php:2007
+#: options/sample/sample-config.php:2016
+#: options/sample/sample-config.php:2034
+#@ redux-framework-demo
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:320
+#: options/sample/sample-config.php:1604
+#@ redux-framework-demo
+msgid "Slider Example 1"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:321
+#: options/sample/sample-config.php:1605
+#@ redux-framework-demo
+msgid "This slider displays the value as a label."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:322
+#: options/sample/sample-config.php:1606
+#@ redux-framework-demo
+msgid "Slider description. Min: 1, max: 500, step: 1, default value: 250"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:332
+#: options/sample/sample-config.php:1616
+#@ redux-framework-demo
+msgid "Slider Example 2 with Steps (5)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:333
+#: options/sample/sample-config.php:1617
+#@ redux-framework-demo
+msgid "This example displays the value in a text box"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:334
+#: options/sample/sample-config.php:1618
+#@ redux-framework-demo
+msgid "Slider description. Min: 0, max: 300, step: 5, default value: 75"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:344
+#: options/sample/sample-config.php:1628
+#@ redux-framework-demo
+msgid "Slider Example 3 with two sliders"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:345
+#: options/sample/sample-config.php:1629
+#@ redux-framework-demo
+msgid "This example displays the values in select boxes"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:346
+#: options/sample/sample-config.php:1630
+#@ redux-framework-demo
+msgid "Slider description. Min: 0, max: 500, step: 5, slider 1 default value: 100, slider 2 default value: 300"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:360
+#: options/sample/sample-config.php:1644
+#@ redux-framework-demo
+msgid "Slider Example 4 with float values"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:361
+#: options/sample/sample-config.php:1645
+#@ redux-framework-demo
+msgid "This example displays float values"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:362
+#: options/sample/sample-config.php:1646
+#@ redux-framework-demo
+msgid "Slider description. Min: 0, max: 1, step: .1, default value: .5"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:373
+#: options/sample/sample-config.php:1668
+#@ redux-framework-demo
+msgid "JQuery UI Spinner Example 1"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:374
+#: options/sample/sample-config.php:1669
+#@ redux-framework-demo
+msgid "JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:383
+#: options/sample/sample-config.php:1192
+#@ redux-framework-demo
+msgid "Switch On"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:384
+#: options/sample/sample-config-legacy.php:391
+#: options/sample/sample-config.php:1193
+#: options/sample/sample-config.php:1200
+#@ redux-framework-demo
+msgid "Look, it's on!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:390
+#: options/sample/sample-config.php:1199
+#@ redux-framework-demo
+msgid "Switch Off"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:398
+#: options/sample/sample-config.php:1207
+#@ redux-framework-demo
+msgid "Switch - Nested Children, Enable to show"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:399
+#: options/sample/sample-config.php:1208
+#@ redux-framework-demo
+msgid "Look, it's on! Also hidden child elements!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:408
+#: options/sample/sample-config.php:1217
+#@ redux-framework-demo
+msgid "Switch - This and the next switch required for patterns to show"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:409
+#: options/sample/sample-config-legacy.php:418
+#: options/sample/sample-config.php:1218
+#: options/sample/sample-config.php:1227
+#@ redux-framework-demo
+msgid "Also called a \"fold\" parent."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:410
+#: options/sample/sample-config-legacy.php:419
+#: options/sample/sample-config.php:1219
+#: options/sample/sample-config.php:1228
+#@ redux-framework-demo
+msgid "Items set with a fold to this ID will hide unless this is set to the appropriate value."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:417
+#: options/sample/sample-config.php:1226
+#@ redux-framework-demo
+msgid "Switch2 - Enable the above switch and this one for patterns to show"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:430
+#@ redux-framework-demo
+msgid "Images Option (with pattern=>true)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:431
+#: options/sample/sample-config.php:1513
+#@ redux-framework-demo
+msgid "Select a background pattern."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:477
+#: options/sample/sample-config.php:965
+#@ redux-framework-demo
+msgid "Slides Options"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:478
+#: options/sample/sample-config.php:966
+#@ redux-framework-demo
+msgid "Unlimited slides with drag and drop sortings."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:479
+#: options/sample/sample-config.php:967
+#@ redux-framework-demo
+msgid "This field will store all slides values into a multidimensional array to use into a foreach loop."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:481
+#: options/sample/sample-config.php:969
+#@ redux-framework-demo
+msgid "This is a title"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:482
+#: options/sample/sample-config.php:970
+#@ redux-framework-demo
+msgid "Description Here"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:483
+#: options/sample/sample-config.php:971
+#@ redux-framework-demo
+msgid "Give us a link!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:490
+#: options/sample/sample-config.php:1538
+#@ redux-framework-demo
+msgid "Preset"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:491
+#: options/sample/sample-config-legacy.php:493
+#: options/sample/sample-config.php:1539
+#: options/sample/sample-config.php:1541
+#@ redux-framework-demo
+msgid "This allows you to set a json string or array to override multiple preferences in your theme."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:514
+#: options/sample/sample-config.php:1680
+#@ redux-framework-demo
+msgid "Typography"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:536
+#: options/sample/sample-config.php:1723
+#@ redux-framework-demo
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:555
+#@ redux-framework-demo
+msgid "General Settings"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:561
+#@ redux-framework-demo
+msgid "Main Layout"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:562
+#@ redux-framework-demo
+msgid "Select main content and sidebar alignment. Choose between 1, 2 or 3 column layout."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:595
+#@ redux-framework-demo
+msgid "Tracking Code"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:596
+#@ redux-framework-demo
+msgid "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:603
+#: options/sample/sample-config.php:579
+#@ redux-framework-demo
+msgid "CSS Code"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:635
+#@ redux-framework-demo
+msgid "Footer Text"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:636
+#@ redux-framework-demo
+msgid "You can use the following shortcodes in your footer text: [wp-url] [site-url] [theme-url] [login-url] [logout-url] [site-title] [site-tagline] [current-year]"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:651
+#@ redux-framework-demo
+msgid "Styling Options"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:657
+#: options/sample/sample-config.php:1265
+#@ redux-framework-demo
+msgid "Theme Stylesheet"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:658
+#: options/sample/sample-config.php:1266
+#@ redux-framework-demo
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:666
+#@ redux-framework-demo
+msgid "Body Background Color"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:667
+#@ redux-framework-demo
+msgid "Pick a background color for the theme (default: #fff)."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:675
+#: options/sample/sample-config.php:728
+#@ redux-framework-demo
+msgid "Body Background"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:676
+#: options/sample/sample-config.php:729
+#@ redux-framework-demo
+msgid "Body background with image, color, etc."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:682
+#: options/sample/sample-config.php:638
+#@ redux-framework-demo
+msgid "Footer Background Color"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:683
+#: options/sample/sample-config.php:639
+#@ redux-framework-demo
+msgid "Pick a background color for the footer (default: #dd9933)."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:690
+#: options/sample/sample-config.php:665
+#: options/sample/sample-config.php:673
+#@ redux-framework-demo
+msgid "Color RGBA"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:691
+#: options/sample/sample-config.php:674
+#@ redux-framework-demo
+msgid "Gives you the RGBA color."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:703
+#: options/sample/sample-config.php:654
+#@ redux-framework-demo
+msgid "Header Gradient Color Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:704
+#: options/sample/sample-config-legacy.php:715
+#: options/sample/sample-config-legacy.php:731
+#: options/sample/sample-config.php:655
+#: options/sample/sample-config.php:695
+#: options/sample/sample-config.php:747
+#: options/sample/sample-config.php:764
+#@ redux-framework-demo
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:714
+#: options/sample/sample-config.php:694
+#@ redux-framework-demo
+msgid "Links Color Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:730
+#: options/sample/sample-config.php:746
+#: options/sample/sample-config.php:763
+#@ redux-framework-demo
+msgid "Header Border Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:760
+#: options/sample/sample-config.php:840
+#: options/sample/sample-config.php:865
+#@ redux-framework-demo
+msgid "Padding/Margin Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:761
+#: options/sample/sample-config.php:841
+#: options/sample/sample-config.php:866
+#@ redux-framework-demo
+msgid "Allow your users to choose the spacing or margin they want."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:762
+#: options/sample/sample-config.php:842
+#: options/sample/sample-config.php:867
+#@ redux-framework-demo
+msgid "You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:775
+#: options/sample/sample-config.php:792
+#@ redux-framework-demo
+msgid "Dimensions (Width/Height) Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:776
+#: options/sample/sample-config.php:793
+#: options/sample/sample-config.php:806
+#@ redux-framework-demo
+msgid "Allow your users to choose width, height, and/or unit."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:777
+#: options/sample/sample-config.php:794
+#: options/sample/sample-config.php:807
+#@ redux-framework-demo
+msgid "You can enable or disable any piece of this field. Width, Height, or Units."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:786
+#: options/sample/sample-config.php:1688
+#@ redux-framework-demo
+msgid "Body Font"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:787
+#: options/sample/sample-config.php:1689
+#@ redux-framework-demo
+msgid "Specify the body font properties."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:799
+#@ redux-framework-demo
+msgid "Custom CSS"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:800
+#@ redux-framework-demo
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:801
+#@ redux-framework-demo
+msgid "This field is even CSS validated!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:807
+#@ redux-framework-demo
+msgid "Custom HTML"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:808
+#@ redux-framework-demo
+msgid "Just like a text box widget."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:809
+#@ redux-framework-demo
+msgid "This field is even HTML validated!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:823
+#: options/sample/sample-config.php:1876
+#@ redux-framework-demo
+msgid "Field Validation"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:824
+#@ redux-framework-demo
+msgid "Validate ALL fields within Redux."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:825
+#@ redux-framework-demo
+msgid "<p class=\"description\">This is the Description. Again HTML is allowed2</p>"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:830
+#: options/sample/sample-config.php:1884
+#@ redux-framework-demo
+msgid "Text Option - Email Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:831
+#: options/sample/sample-config.php:1885
+#@ redux-framework-demo
+msgid "This is a little space under the Field Title in the Options table, additional info is good in here."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:844
+#: options/sample/sample-config.php:1894
+#@ redux-framework-demo
+msgid "Text Option with Data Attributes"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:845
+#: options/sample/sample-config.php:1895
+#@ redux-framework-demo
+msgid "You can also pass an options array if you want. Set the default to whatever you like."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:852
+#: options/sample/sample-config.php:1902
+#@ redux-framework-demo
+msgid "Multi Text Option - Color Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:854
+#: options/sample/sample-config.php:1904
+#@ redux-framework-demo
+msgid "If you enter an invalid color it will be removed. Try using the text \"blue\" as a color.  ;)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:860
+#: options/sample/sample-config.php:1910
+#@ redux-framework-demo
+msgid "Text Option - URL Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:861
+#: options/sample/sample-config.php:1911
+#@ redux-framework-demo
+msgid "This must be a URL."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:873
+#: options/sample/sample-config.php:1919
+#@ redux-framework-demo
+msgid "Text Option - Numeric Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:874
+#: options/sample/sample-config.php:1920
+#@ redux-framework-demo
+msgid "This must be numeric."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:882
+#: options/sample/sample-config.php:1928
+#@ redux-framework-demo
+msgid "Text Option - Comma Numeric Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:883
+#: options/sample/sample-config.php:1929
+#@ redux-framework-demo
+msgid "This must be a comma separated string of numerical values."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:891
+#: options/sample/sample-config.php:1937
+#@ redux-framework-demo
+msgid "Text Option - No Special Chars Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:892
+#: options/sample/sample-config.php:1938
+#@ redux-framework-demo
+msgid "This must be a alpha numeric only."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:900
+#: options/sample/sample-config.php:1946
+#@ redux-framework-demo
+msgid "Text Option - Str Replace Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:901
+#: options/sample/sample-config-legacy.php:914
+#: options/sample/sample-config-legacy.php:927
+#: options/sample/sample-config-legacy.php:936
+#: options/sample/sample-config.php:1947
+#: options/sample/sample-config.php:1960
+#: options/sample/sample-config.php:1973
+#@ redux-framework-demo
+msgid "You decide."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:902
+#: options/sample/sample-config.php:1948
+#@ redux-framework-demo
+msgid "This field's default value was changed by a filter hook!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:913
+#: options/sample/sample-config.php:1959
+#@ redux-framework-demo
+msgid "Text Option - Preg Replace Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:926
+#: options/sample/sample-config.php:1972
+#@ redux-framework-demo
+msgid "Text Option - Custom Callback Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:935
+#@ redux-framework-demo
+msgid "Text Option - Custom Callback Validated - Class"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:950
+#: options/sample/sample-config.php:1996
+#@ redux-framework-demo
+msgid "Textarea Option - No HTML Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:951
+#: options/sample/sample-config.php:1997
+#@ redux-framework-demo
+msgid "All HTML will be stripped"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:959
+#: options/sample/sample-config.php:2005
+#@ redux-framework-demo
+msgid "Textarea Option - HTML Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:960
+#: options/sample/sample-config.php:2006
+#@ redux-framework-demo
+msgid "HTML Allowed (wp_kses)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:968
+#: options/sample/sample-config.php:514
+#: options/sample/sample-config.php:2014
+#@ redux-framework-demo
+msgid "Textarea Option - HTML Validated Custom"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:969
+#: options/sample/sample-config.php:2015
+#@ redux-framework-demo
+msgid "Custom HTML Allowed (wp_kses)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:978
+#: options/sample/sample-config.php:2032
+#@ redux-framework-demo
+msgid "Textarea Option - JS Validated"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:979
+#: options/sample/sample-config.php:2033
+#@ redux-framework-demo
+msgid "JS will be escaped"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:988
+#@ redux-framework-demo
+msgid "Radio/Checkbox Fields"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:989
+#: options/sample/sample-config-legacy.php:1138
+#: options/sample/sample-config-legacy.php:1384
+#: options/sample/sample-config-legacy.php:1612
+#@ redux-framework-demo
+msgid "<p class=\"description\">This is the Description. Again HTML is allowed</p>"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:994
+#: options/sample/sample-config.php:320
+#@ redux-framework-demo
+msgid "Checkbox Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:995
+#: options/sample/sample-config-legacy.php:1003
+#: options/sample/sample-config-legacy.php:1022
+#: options/sample/sample-config-legacy.php:1030
+#: options/sample/sample-config-legacy.php:1038
+#: options/sample/sample-config-legacy.php:1052
+#: options/sample/sample-config-legacy.php:1060
+#: options/sample/sample-config-legacy.php:1075
+#: options/sample/sample-config-legacy.php:1144
+#: options/sample/sample-config-legacy.php:1158
+#: options/sample/sample-config-legacy.php:1186
+#: options/sample/sample-config-legacy.php:1219
+#: options/sample/sample-config-legacy.php:1228
+#: options/sample/sample-config-legacy.php:1236
+#: options/sample/sample-config-legacy.php:1245
+#: options/sample/sample-config-legacy.php:1253
+#: options/sample/sample-config-legacy.php:1262
+#: options/sample/sample-config-legacy.php:1270
+#: options/sample/sample-config-legacy.php:1279
+#: options/sample/sample-config-legacy.php:1287
+#: options/sample/sample-config-legacy.php:1296
+#: options/sample/sample-config-legacy.php:1314
+#: options/sample/sample-config-legacy.php:1323
+#: options/sample/sample-config-legacy.php:1331
+#: options/sample/sample-config-legacy.php:1340
+#: options/sample/sample-config-legacy.php:1348
+#: options/sample/sample-config-legacy.php:1390
+#: options/sample/sample-config-legacy.php:1401
+#: options/sample/sample-config-legacy.php:1415
+#: options/sample/sample-config.php:321
+#: options/sample/sample-config.php:329
+#: options/sample/sample-config.php:348
+#: options/sample/sample-config.php:356
+#: options/sample/sample-config.php:372
+#: options/sample/sample-config.php:386
+#: options/sample/sample-config.php:1153
+#: options/sample/sample-config.php:1167
+#: options/sample/sample-config.php:1252
+#: options/sample/sample-config.php:1274
+#: options/sample/sample-config.php:1299
+#: options/sample/sample-config.php:1332
+#: options/sample/sample-config.php:1341
+#: options/sample/sample-config.php:1349
+#: options/sample/sample-config.php:1358
+#: options/sample/sample-config.php:1366
+#: options/sample/sample-config.php:1375
+#: options/sample/sample-config.php:1383
+#: options/sample/sample-config.php:1392
+#: options/sample/sample-config.php:1400
+#: options/sample/sample-config.php:1409
+#: options/sample/sample-config.php:1427
+#: options/sample/sample-config.php:1436
+#: options/sample/sample-config.php:1444
+#: options/sample/sample-config.php:1453
+#: options/sample/sample-config.php:1461
+#: options/sample/sample-config.php:1477
+#: options/sample/sample-config.php:1522
+#: options/sample/sample-config.php:1771
+#@ redux-framework-demo
+msgid "No validation can be done on this field type"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1002
+#: options/sample/sample-config.php:328
+#@ redux-framework-demo
+msgid "Multi Checkbox Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1021
+#: options/sample/sample-config-legacy.php:1051
+#: options/sample/sample-config.php:347
+#@ redux-framework-demo
+msgid "Multi Checkbox Option (with menu data)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1029
+#: options/sample/sample-config.php:355
+#@ redux-framework-demo
+msgid "Multi Checkbox Option (with sidebar data)"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1037
+#: options/sample/sample-config.php:371
+#@ redux-framework-demo
+msgid "Radio Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1059
+#: options/sample/sample-config.php:1521
+#@ redux-framework-demo
+msgid "Images Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1074
+#: options/sample/sample-config.php:1476
+#@ redux-framework-demo
+msgid "Images Option for Layout"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1076
+#: options/sample/sample-config.php:1478
+#@ redux-framework-demo
+msgid "This uses some of the built in images, you can use them for layout options."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1109
+#: options/sample/sample-config-legacy.php:1123
+#: options/sample/sample-config.php:401
+#: options/sample/sample-config.php:415
+#@ redux-framework-demo
+msgid "Sortable Text Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1110
+#: options/sample/sample-config-legacy.php:1124
+#: options/sample/sample-config.php:402
+#: options/sample/sample-config.php:416
+#@ redux-framework-demo
+msgid "Define and reorder these however you want."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1137
+#: options/sample/sample-config.php:1236
+#@ redux-framework-demo
+msgid "Select Fields"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1143
+#: options/sample/sample-config.php:1251
+#@ redux-framework-demo
+msgid "Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1157
+#: options/sample/sample-config.php:1273
+#@ redux-framework-demo
+msgid "Select Option with optgroup"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1185
+#: options/sample/sample-config.php:1298
+#@ redux-framework-demo
+msgid "Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1200
+#: options/sample/sample-config.php:1313
+#: options/sample/sample-config.php:1562
+#: options/sample/sample-config.php:1571
+#@ redux-framework-demo
+msgid "Select Image"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1201
+#: options/sample/sample-config.php:1314
+#@ redux-framework-demo
+msgid "A preview of the selected image will appear underneath the select box."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1212
+#: options/sample/sample-config.php:1325
+#@ redux-framework-demo
+msgid "You can easily add a variety of data from WordPress."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1218
+#: options/sample/sample-config.php:1331
+#@ redux-framework-demo
+msgid "Categories Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1227
+#: options/sample/sample-config.php:1340
+#@ redux-framework-demo
+msgid "Categories Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1235
+#: options/sample/sample-config.php:1348
+#@ redux-framework-demo
+msgid "Pages Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1244
+#: options/sample/sample-config.php:1357
+#@ redux-framework-demo
+msgid "Pages Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1252
+#: options/sample/sample-config.php:1365
+#@ redux-framework-demo
+msgid "Tags Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1261
+#: options/sample/sample-config.php:1374
+#@ redux-framework-demo
+msgid "Tags Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1269
+#: options/sample/sample-config.php:1382
+#@ redux-framework-demo
+msgid "Menus Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1278
+#: options/sample/sample-config.php:1391
+#@ redux-framework-demo
+msgid "Menus Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1286
+#: options/sample/sample-config.php:1399
+#@ redux-framework-demo
+msgid "Post Type Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1295
+#: options/sample/sample-config.php:1408
+#@ redux-framework-demo
+msgid "Post Type Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1305
+#: options/sample/sample-config.php:1418
+#@ redux-framework-demo
+msgid "Post Type Multi Select Option + Sortable"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1306
+#: options/sample/sample-config.php:1419
+#@ redux-framework-demo
+msgid "This field also has sortable enabled!"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1313
+#: options/sample/sample-config.php:1426
+#@ redux-framework-demo
+msgid "Posts Select Option2"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1322
+#: options/sample/sample-config.php:1435
+#@ redux-framework-demo
+msgid "Posts Multi Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1330
+#: options/sample/sample-config.php:1443
+#@ redux-framework-demo
+msgid "User Role Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1339
+#: options/sample/sample-config.php:1452
+#@ redux-framework-demo
+msgid "Capabilities Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1347
+#: options/sample/sample-config.php:1460
+#@ redux-framework-demo
+msgid "Elusive Icons Select Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1349
+#: options/sample/sample-config.php:1462
+#@ redux-framework-demo
+msgid "Here's a list of all the elusive icons by name and icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1355
+#@ redux-framework-demo
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1356
+#@ redux-framework-demo
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1357
+#@ redux-framework-demo
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1361
+#@ redux-framework-demo
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1383
+#@ redux-framework-demo
+msgid "Additional Fields"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1389
+#: options/sample/sample-config.php:1770
+#@ redux-framework-demo
+msgid "Date Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1400
+#: options/sample/sample-config.php:1152
+#@ redux-framework-demo
+msgid "Button Set Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1414
+#: options/sample/sample-config.php:1166
+#@ redux-framework-demo
+msgid "Button Set, Multi Select"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1429
+#: options/sample/sample-config.php:1007
+#@ redux-framework-demo
+msgid "This is the info field, if you want to break sections up."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1435
+#: options/sample/sample-config-legacy.php:1443
+#: options/sample/sample-config-legacy.php:1451
+#: options/sample/sample-config-legacy.php:1465
+#: options/sample/sample-config-legacy.php:1473
+#: options/sample/sample-config-legacy.php:1482
+#: options/sample/sample-config-legacy.php:1491
+#: options/sample/sample-config-legacy.php:1500
+#: options/sample/sample-config.php:1013
+#: options/sample/sample-config.php:1020
+#: options/sample/sample-config.php:1028
+#: options/sample/sample-config.php:1036
+#: options/sample/sample-config.php:1045
+#: options/sample/sample-config.php:1052
+#: options/sample/sample-config.php:1060
+#: options/sample/sample-config.php:1069
+#: options/sample/sample-config.php:1078
+#: options/sample/sample-config.php:1087
+#@ redux-framework-demo
+msgid "This is a title."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1436
+#@ redux-framework-demo
+msgid "This is an info field with the warning style applied and a header."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1444
+#@ redux-framework-demo
+msgid "This is an info field with the success style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1452
+#@ redux-framework-demo
+msgid "This is an info field with the critical style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1466
+#@ redux-framework-demo
+msgid "This is an info notice field with the normal style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1474
+#@ redux-framework-demo
+msgid "This is an info notice field with the info style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1483
+#@ redux-framework-demo
+msgid "This is an info notice field with the warning style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1492
+#@ redux-framework-demo
+msgid "This is an info notice field with the success style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1501
+#@ redux-framework-demo
+msgid "This is an notice field with the critical style applied, a header and an icon."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1506
+#: options/sample/sample-config.php:1866
+#@ redux-framework-demo
+msgid "Custom Field Callback"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1507
+#: options/sample/sample-config-legacy.php:1515
+#: options/sample/sample-config.php:1867
+#@ redux-framework-demo
+msgid "This is a completely unique field type"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1508
+#: options/sample/sample-config-legacy.php:1516
+#: options/sample/sample-config.php:1868
+#@ redux-framework-demo
+msgid "This is created with a callback function, so anything goes in this field. Make sure to define the function though."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1514
+#@ redux-framework-demo
+msgid "Custom Field Callback - Class"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1524
+#: options/sample/sample-config-legacy.php:1548
+#: options/sample/sample-config.php:2183
+#@ redux-framework-demo
+msgid "Customizer Only Option"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1525
+#: options/sample/sample-config-legacy.php:1549
+#: options/sample/sample-config.php:2184
+#@ redux-framework-demo
+msgid "The subtitle is NOT visible in customizer"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1526
+#: options/sample/sample-config-legacy.php:1550
+#: options/sample/sample-config.php:2185
+#@ redux-framework-demo
+msgid "The field desc is NOT visible in customizer."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1541
+#: options/sample/sample-config.php:2176
+#@ redux-framework-demo
+msgid "Customizer Only"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1542
+#: options/sample/sample-config.php:2177
+#@ redux-framework-demo
+msgid "<p class=\"description\">This Section should be visible only in Customizer</p>"
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1592
+#@ redux-framework-demo
+msgid "Import and Export your Redux Framework settings from file, text or URL."
+msgstr ""
+
+#: options/sample/sample-config-legacy.php:1611
+#@ redux-framework-demo
+msgid "Theme Information"
+msgstr ""
+
+#: options/sample/sample-config.php:312
+#@ redux-framework-demo
+msgid "Checkbox"
+msgstr ""
+
+#: options/sample/sample-config.php:363
+#@ redux-framework-demo
+msgid "Radio"
+msgstr ""
+
+#: options/sample/sample-config.php:385
+#@ redux-framework-demo
+msgid "Radio Option w/ Menu Data"
+msgstr ""
+
+#: options/sample/sample-config.php:393
+#@ redux-framework-demo
+msgid "Sortable"
+msgstr ""
+
+#: options/sample/sample-config.php:450
+#@ redux-framework-demo
+msgid "Text Field w/ Hint"
+msgstr ""
+
+#: options/sample/sample-config.php:472
+#@ redux-framework-demo
+msgid "Multi Text"
+msgstr ""
+
+#: options/sample/sample-config.php:480
+#@ redux-framework-demo
+msgid "Multi Text Option"
+msgstr ""
+
+#: options/sample/sample-config.php:481
+#@ redux-framework-demo
+msgid "Field subtitle"
+msgstr ""
+
+#: options/sample/sample-config.php:482
+#@ redux-framework-demo
+msgid "Field Decription"
+msgstr ""
+
+#: options/sample/sample-config.php:506
+#@ redux-framework-demo
+msgid "Textarea"
+msgstr ""
+
+#: options/sample/sample-config.php:524
+#@ redux-framework-demo
+msgid "Editors"
+msgstr ""
+
+#: options/sample/sample-config.php:530
+#@ redux-framework-demo
+msgid "WordPress Editor"
+msgstr ""
+
+#: options/sample/sample-config.php:539
+#@ redux-framework-demo
+msgid "Editor"
+msgstr ""
+
+#: options/sample/sample-config.php:540
+#@ redux-framework-demo
+msgid "Use any of the features of WordPress editor inside your panel!"
+msgstr ""
+
+#: options/sample/sample-config.php:546
+#@ redux-framework-demo
+msgid "Editor w/o Media Button"
+msgstr ""
+
+#: options/sample/sample-config.php:562
+#@ redux-framework-demo
+msgid "Editor - Full Width"
+msgstr ""
+
+#: options/sample/sample-config.php:570
+#@ redux-framework-demo
+msgid "ACE Editor"
+msgstr ""
+
+#: options/sample/sample-config.php:574
+#@ redux-framework-demo
+msgid "For full documentation on the this field, visit: "
+msgstr ""
+
+#: options/sample/sample-config.php:589
+#@ redux-framework-demo
+msgid "JS Code"
+msgstr ""
+
+#: options/sample/sample-config.php:590
+#@ redux-framework-demo
+msgid "Paste your JS code here."
+msgstr ""
+
+#: options/sample/sample-config.php:600
+#@ redux-framework-demo
+msgid "PHP Code"
+msgstr ""
+
+#: options/sample/sample-config.php:601
+#@ redux-framework-demo
+msgid "Paste your PHP code here."
+msgstr ""
+
+#: options/sample/sample-config.php:615
+#@ redux-framework-demo
+msgid "Color Selection"
+msgstr ""
+
+#: options/sample/sample-config.php:622
+#@ redux-framework-demo
+msgid "Color"
+msgstr ""
+
+#: options/sample/sample-config.php:631
+#@ redux-framework-demo
+msgid "Site Title Color"
+msgstr ""
+
+#: options/sample/sample-config.php:632
+#@ redux-framework-demo
+msgid "Pick a title color for the theme (default: #000)."
+msgstr ""
+
+#: options/sample/sample-config.php:646
+#@ redux-framework-demo
+msgid "Color Gradient"
+msgstr ""
+
+#: options/sample/sample-config.php:686
+#@ redux-framework-demo
+msgid "Link Color"
+msgstr ""
+
+#: options/sample/sample-config.php:713
+#@ redux-framework-demo
+msgid "Design Fields"
+msgstr ""
+
+#: options/sample/sample-config.php:720
+#@ redux-framework-demo
+msgid "Background"
+msgstr ""
+
+#: options/sample/sample-config.php:738
+#@ redux-framework-demo
+msgid "Border"
+msgstr ""
+
+#: options/sample/sample-config.php:782
+#@ redux-framework-demo
+msgid "Dimensions"
+msgstr ""
+
+#: options/sample/sample-config.php:805
+#@ redux-framework-demo
+msgid "Dimensions (Width) Option"
+msgstr ""
+
+#: options/sample/sample-config.php:818
+#@ redux-framework-demo
+msgid "Spacing"
+msgstr ""
+
+#: options/sample/sample-config.php:880
+#@ redux-framework-demo
+msgid "Media Uploads"
+msgstr ""
+
+#: options/sample/sample-config.php:888
+#@ redux-framework-demo
+msgid "Gallery"
+msgstr ""
+
+#: options/sample/sample-config.php:904
+#@ redux-framework-demo
+msgid "Media"
+msgstr ""
+
+#: options/sample/sample-config.php:946
+#@ redux-framework-demo
+msgid "Upload Anything - Disabled Mode"
+msgstr ""
+
+#: options/sample/sample-config.php:957
+#@ redux-framework-demo
+msgid "Slides"
+msgstr ""
+
+#: options/sample/sample-config.php:979
+#@ redux-framework-demo
+msgid "Presentation Fields"
+msgstr ""
+
+#: options/sample/sample-config.php:986
+#@ redux-framework-demo
+msgid "Divide"
+msgstr ""
+
+#: options/sample/sample-config.php:988
+#@ redux-framework-demo
+msgid "The spacer to the section menu as seen to the left (after this section block) is the divide \"section\". Also the divider below is the divide \"field\"."
+msgstr ""
+
+#: options/sample/sample-config.php:999
+#@ redux-framework-demo
+msgid "Info"
+msgstr ""
+
+#: options/sample/sample-config.php:1014
+#@ redux-framework-demo
+msgid "This is an info field with the <strong>info</strong> style applied. By default the <strong>normal</strong> style is applied."
+msgstr ""
+
+#: options/sample/sample-config.php:1021
+#@ redux-framework-demo
+msgid "This is an info field with the <strong>warning</strong> style applied."
+msgstr ""
+
+#: options/sample/sample-config.php:1029
+#@ redux-framework-demo
+msgid "This is an info field with the <strong>success</strong> style applied and an icon."
+msgstr ""
+
+#: options/sample/sample-config.php:1037
+#@ redux-framework-demo
+msgid "This is an info field with the <strong>critical</strong> style applied and an icon."
+msgstr ""
+
+#: options/sample/sample-config.php:1046
+#@ redux-framework-demo
+msgid "This is an info field with the <strong>custom</strong> style applied, color arg passed, and an icon."
+msgstr ""
+
+#: options/sample/sample-config.php:1053
+#@ redux-framework-demo
+msgid "This is an info non-notice field with the <strong>normal</strong> style applied."
+msgstr ""
+
+#: options/sample/sample-config.php:1061
+#@ redux-framework-demo
+msgid "This is an info non-notice field with the <strong>info</strong> style applied."
+msgstr ""
+
+#: options/sample/sample-config.php:1070
+#@ redux-framework-demo
+msgid "This is an info non-notice field with the <strong>warning</strong> style applied and an icon."
+msgstr ""
+
+#: options/sample/sample-config.php:1079
+#@ redux-framework-demo
+msgid "This is an info non-notice field with the <strong>success</strong> style applied and an icon."
+msgstr ""
+
+#: options/sample/sample-config.php:1088
+#@ redux-framework-demo
+msgid "This is an non-notice field with the <strong>critical</strong> style applied and an icon."
+msgstr ""
+
+#: options/sample/sample-config.php:1094
+#@ redux-framework-demo
+msgid "Section"
+msgstr ""
+
+#: options/sample/sample-config.php:1102
+#@ redux-framework-demo
+msgid "Section Example"
+msgstr ""
+
+#: options/sample/sample-config.php:1103
+#@ redux-framework-demo
+msgid "With the \"section\" field you can create indented option sections."
+msgstr ""
+
+#: options/sample/sample-config.php:1109
+#: options/sample/sample-config.php:1115
+#@ redux-framework-demo
+msgid "Field Title"
+msgstr ""
+
+#: options/sample/sample-config.php:1110
+#: options/sample/sample-config.php:1116
+#@ redux-framework-demo
+msgid "Field Subtitle"
+msgstr ""
+
+#: options/sample/sample-config.php:1126
+#@ redux-framework-demo
+msgid "And now you can add more fields below and outside of the indent."
+msgstr ""
+
+#: options/sample/sample-config.php:1137
+#@ redux-framework-demo
+msgid "Switch & Button Set"
+msgstr ""
+
+#: options/sample/sample-config.php:1144
+#@ redux-framework-demo
+msgid "Button Set"
+msgstr ""
+
+#: options/sample/sample-config.php:1183
+#@ redux-framework-demo
+msgid "Switch"
+msgstr ""
+
+#: options/sample/sample-config.php:1467
+#@ redux-framework-demo
+msgid "Image Select"
+msgstr ""
+
+#: options/sample/sample-config.php:1512
+#@ redux-framework-demo
+msgid "Images Option (with tiles => true)"
+msgstr ""
+
+#: options/sample/sample-config.php:1589
+#@ redux-framework-demo
+msgid "Slider / Spinner"
+msgstr ""
+
+#: options/sample/sample-config.php:1596
+#@ redux-framework-demo
+msgid "Slider"
+msgstr ""
+
+#: options/sample/sample-config.php:1660
+#@ redux-framework-demo
+msgid "Spinner"
+msgstr ""
+
+#: options/sample/sample-config.php:1701
+#@ redux-framework-demo
+msgid "Typography h2.site-description"
+msgstr ""
+
+#: options/sample/sample-config.php:1738
+#@ redux-framework-demo
+msgid "Additional Types"
+msgstr ""
+
+#: options/sample/sample-config.php:1778
+#@ redux-framework-demo
+msgid "Sorter"
+msgstr ""
+
+#: options/sample/sample-config.php:1826
+#@ redux-framework-demo
+msgid "Raw"
+msgstr ""
+
+#: options/sample/sample-config.php:1834
+#@ redux-framework-demo
+msgid "Standard Raw Field"
+msgstr ""
+
+#: options/sample/sample-config.php:1843
+#@ redux-framework-demo
+msgid "Raw Field <code>full_width</code> False"
+msgstr ""
+
+#: options/sample/sample-config.php:1852
+#@ redux-framework-demo
+msgid "Advanced Features"
+msgstr ""
+
+#: options/sample/sample-config.php:1858
+#@ redux-framework-demo
+msgid "Callback"
+msgstr ""
+
+#: options/sample/sample-config.php:1878
+#: options/sample/sample-config.php:2044
+#@ redux-framework-demo
+msgid "For full documentation on validation, visit: "
+msgstr ""
+
+#: options/sample/sample-config.php:1974
+#@ redux-framework-demo
+msgid "Enter <code>1</code> and click <strong>Save Changes</strong> for an error message, or enter <code>2</code> and click <strong>Save Changes</strong> for a warning message."
+msgstr ""
+
+#: options/sample/sample-config.php:2042
+#@ redux-framework-demo
+msgid "Field Required / Linking"
+msgstr ""
+
+#: options/sample/sample-config.php:2148
+#@ redux-framework-demo
+msgid "WPML Integration"
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm-controller.php:28
+#@ default
+msgid "Must call in of after the \"plugins_loaded\" action."
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm-controller.php:138
+#, php-format
+#@ tivwp-dm
+msgid "Unknown action \"%1$s\" specified for %2$s"
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm-controller.php:143
+#, php-format
+#@ tivwp-dm
+msgid "The unknown action has been replaced with \"%s\""
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm-controller.php:158
+#, php-format
+#@ tivwp-dm
+msgid "Automatic action performed: \"%s\""
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm.php:112
+#@ tivwp-dm
+msgid "Activate Development Plugins"
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm.php:119
+#@ tivwp-dm
+msgid "Deactivate Development Plugins"
+msgstr ""
+
+#: options/tests/includes/class-tivwp-dm.php:131
+#@ tivwp-dm
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#. translators: plugin header field 'Name'
+#: options/tests/tivwp-dm.php:0
+#@ business-review
+msgid "TIVWP-DM Development Manager"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: options/tests/tivwp-dm.php:0
+#@ business-review
+msgid "https://github.com/TIVWP/tivwp-dm"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: options/tests/tivwp-dm.php:0
+#@ business-review
+msgid "Install and manage development plugins. (Single-site only, no Network Activation)."
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: options/tests/tivwp-dm.php:0
+#@ business-review
+msgid "TIV.NET"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: options/tests/tivwp-dm.php:0
+#@ business-review
+msgid "http://www.tiv.net"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: options/tests/tivwp-dm.php:0
+#@ business-review
+msgid "14.03.25"
+msgstr ""
+
