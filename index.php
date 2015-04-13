@@ -30,7 +30,7 @@ class Business_Review {
 
 	public function __construct(){
 
-		
+
 
 		// Create the settings page.
 		if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' ) ) {
@@ -336,6 +336,7 @@ class Business_Review {
 		$columns = array(
 			'cb'            => '<input type="checkbox">',
 			'review_author' => __( 'Author' ),
+			'location'      => __( 'Office Location', 'business-review' ),
 			'text'          => __( 'Review', 'business-review' ),
 			'date'          => __( 'Date' ) );
 
@@ -371,6 +372,9 @@ class Business_Review {
 					<?php endif ?>
 				</div>
 				<?php
+				break;
+			case 'location':
+				echo $this->get_review_info()['location']['value']['title'];
 				break;
 			case 'text':
 				?>
