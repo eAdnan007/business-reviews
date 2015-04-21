@@ -238,27 +238,19 @@
                             'id'       => 'locations',
                             'type'     => 'multi_text',
                             'title'    => __( 'Locations', 'business-review' ),
-                            'desc'     => __( 'Different locations where the business have brances.', 'business-review' ),
-                            'default'  => array(
-                                'Jupiter',
-                                'Hollywood/Fort Lauderdale/Dania',
-                                'Tamarac',
-                                'Lauderdale Lakes',
-                                'Hialeah',
-                                'Kendall'
-                            )
+                            'desc'     => __( 'Different locations where the business have brances.', 'business-review' )
                         ),
                         array(
                             'id'       => 'rating_criteria_one',
                             'type'     => 'text',
                             'title'    => __( 'Rating Criteria One Options', 'business-review' ),
-                            'default'     => array( 
-                                'weight'              => 5,
-                                'short_title'         => __( 'Overall', 'business-review' ),
-                                'long_title'          => __( 'How would you rate your overall experience in the office?', 'business-review' ),
-                                'description'         => ''
+                            'default'  => array(
+                                'weight'      => '',
+                                'short_title' => '',
+                                'long_title'  => '',
+                                'description' => ''
                             ),
-                            'options'     => array( 
+                            'options'  => array( 
                                 'weight'              => __( 'Weight', 'business-review' ),
                                 'short_title'         => __( 'Short Title', 'business-review' ),
                                 'long_title'          => __( 'Long Title', 'business-review' ),
@@ -269,11 +261,11 @@
                             'id'       => 'rating_criteria_two',
                             'type'     => 'text',
                             'title'    => __( 'Rating Criteria Two Options', 'business-review' ),
-                            'default'     => array( 
-                                'weight'              => 5,
-                                'short_title'         => __( 'Front Desk', 'business-review' ),
-                                'long_title'          => __( 'How was your experience with the front desk staff?', 'business-review' ),
-                                'description'         => ''
+                            'default'  => array(
+                                'weight'      => '',
+                                'short_title' => '',
+                                'long_title'  => '',
+                                'description' => ''
                             ),
                             'options'     => array( 
                                 'weight'              => __( 'Weight', 'business-review' ),
@@ -286,11 +278,11 @@
                             'id'       => 'rating_criteria_three',
                             'type'     => 'text',
                             'title'    => __( 'Rating Criteria Three Options', 'business-review' ),
-                            'default'     => array( 
-                                'weight'              => 5,
-                                'short_title'         => __( 'Doctor', 'business-review' ),
-                                'long_title'          => __( 'How was your experience with the Doctor? (if applicable)', 'business-review' ),
-                                'description'         => ''
+                            'default'  => array(
+                                'weight'      => '',
+                                'short_title' => '',
+                                'long_title'  => '',
+                                'description' => ''
                             ),
                             'options'     => array( 
                                 'weight'              => __( 'Weight', 'business-review' ),
@@ -303,11 +295,11 @@
                             'id'       => 'rating_criteria_four',
                             'type'     => 'text',
                             'title'    => __( 'Rating Criteria Four Options', 'business-review' ),
-                            'default'     => array( 
-                                'weight'              => 5,
-                                'short_title'         => __( 'Optical Staff', 'business-review' ),
-                                'long_title'          => __( 'How was your experience with the Optical Staff?', 'business-review' ),
-                                'description'         => ''
+                            'default'  => array(
+                                'weight'      => '',
+                                'short_title' => '',
+                                'long_title'  => '',
+                                'description' => ''
                             ),
                             'options'     => array( 
                                 'weight'              => __( 'Weight', 'business-review' ),
@@ -320,11 +312,11 @@
                             'id'       => 'rating_criteria_five',
                             'type'     => 'text',
                             'title'    => __( 'Rating Criteria Five Options', 'business-review' ),
-                            'default'     => array( 
-                                'weight'              => 5,
-                                'short_title'         => __( 'Appearance', 'business-review' ),
-                                'long_title'          => __( 'How would you rate the overall appearance of the office?', 'business-review' ),
-                                'description'         => ''
+                            'default'  => array(
+                                'weight'      => '',
+                                'short_title' => '',
+                                'long_title'  => '',
+                                'description' => ''
                             ),
                             'options'     => array( 
                                 'weight'              => __( 'Weight', 'business-review' ),
@@ -345,7 +337,8 @@
                             'type'     => 'select',
                             'data'     => 'pages',
                             'title'    => __( 'Review Page', 'business-review' ),
-                            'subtitle' => __( 'The page where you placed the [business_review] shortcode to display reviews.', 'business-review' )
+                            'subtitle' => __( 'The page where you placed the [business_review] shortcode to display reviews.', 'business-review' ),
+                            'default'  => 0
                         ),
                         array(
                             'id'        => 'show_gravatar',
@@ -359,7 +352,7 @@
                             'type'      => 'switch',
                             'title'     => __('Verify Negative Reviews', 'business-review'),
                             'subtitle'  => __('Instead of directly publishing, keep reviews pending if it\'s negative.', 'business-review'),
-                            'default'   => true,
+                            'default'   => false,
                         ),
                         array(
                             'id'        => 'restriction_scope',
@@ -387,39 +380,13 @@
                             'id'       => 'thank_you_message_positive',
                             'type'     => 'editor',
                             'title'    => __( 'Thankyou Message for Positive Review', 'business-review' ),
-                            'default'  => <<<MES
-<p>Thank you for your feedback. We would really appreciate if you take couple more minutes to review us on the following websites.</p>
-<div class="third-party-reviews">
-    <div class="third-party">
-        <a href="http://www.yelp.com/biz/advanced-vision-care-jupiter" target="_blank">
-            <img src="http://advancedvisioncareflorida.com/wp-content/uploads/2015/02/yelp-logo1.png" alt="Yelp">
-        </a>
-    </div>
-    <div class="third-party">
-        <a href="https://plus.google.com/u/1/108831426898401007146/about?review=1" target="_blank">
-            <img src="http://advancedvisioncareflorida.com/wp-content/uploads/2015/02/Google-Plus-Logo.png" alt="Google+">
-        </a>
-    </div>
-    <div class="third-party">
-        <a href="https://local.yahoo.com/info-37698769" target="_blank">
-            <img src="http://advancedvisioncareflorida.com/wp-content/uploads/2015/02/Yahoo-Local.jpg" alt="Yahoo Local">
-        </a>
-    </div>
-    <div class="third-party">
-        <a href="https://www.facebook.com/AdvancedVisionCare/" target="_blank">
-            <img src="http://advancedvisioncareflorida.com/wp-content/uploads/2015/02/msb-facebook.jpg" alt="Facebook">
-        </a>
-    </div>
-    <br style="clear:both" />
-</div>
-MES
+                            'default'  => __('Thank you for your feedback. We would really appreciate if you take couple more minutes to review us on the following websites.', 'business-review' )
                         ),
                         array(
                             'id'       => 'thank_you_message_negative',
                             'type'     => 'editor',
                             'title'    => __( 'Thankyou Message for Negative Review', 'business-review' ),
-                            'default'  => __( 'We are sorry to see that you were not satisfied with our service.
-                                            Before publishing this review, we will contact you trying to fix your issue if possible.', 'business-review' )
+                            'default'  => __( 'We are sorry to see that you were not satisfied with our service. Before publishing this review, we will contact you trying to fix your issue if possible.', 'business-review' )
                         ),
                         array(
                             'id'       => 'review_duplicate_error',
@@ -433,7 +400,8 @@ MES
                             'title'     => __('Custom CSS Code', 'business-review'),
                             'subtitle'  => __('Paste your CSS code here.', 'business-review'),
                             'mode'      => 'css',
-                            'theme'     => 'monokai'
+                            'theme'     => 'monokai',
+                            'default'   => ''
                         )
 
                     )
