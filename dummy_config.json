@@ -1,0 +1,43 @@
+{
+    "locations": ["Jupiter", "Hollywood\/Fort Lauderdale\/Dania", "Tamarac", "Lauderdale Lakes", "Hialeah", "Kendall"],
+    "rating_criteria_one": {
+        "weight": 5,
+        "short_title": "Overall",
+        "long_title": "How would you rate your overall experience in the office?",
+        "description": ""
+    },
+    "rating_criteria_two": {
+        "weight": 5,
+        "short_title": "Front Desk",
+        "long_title": "How was your experience with the front desk staff?",
+        "description": ""
+    },
+    "rating_criteria_three": {
+        "weight": 5,
+        "short_title": "Doctor",
+        "long_title": "How was your experience with the Doctor? (if applicable)",
+        "description": ""
+    },
+    "rating_criteria_four": {
+        "weight": 5,
+        "short_title": "Optical Staff",
+        "long_title": "How was your experience with the Optical Staff?",
+        "description": ""
+    },
+    "rating_criteria_five": {
+        "weight": 5,
+        "short_title": "Appearance",
+        "long_title": "How would you rate the overall appearance of the office?",
+        "description": ""
+    },
+    "satisfaction_threshold": "4",
+    "show_gravatar": true,
+    "verify_poor_rating": true,
+    "restriction_scope": "location",
+    "one_review_per_ip": true,
+    "one_review_per_email": true,
+    "thank_you_message_positive": "<p>Thank you for your feedback. We would really appreciate if you take couple more minutes to review us on the following websites.<\/p>",
+    "thank_you_message_negative": "We are sorry to see that you were not satisfied with our service. Before publishing this review, we will contact you trying to fix your issue if possible.",
+    "review_duplicate_error": "We only accept one review per person to protect the integrity.",
+    "redux-backup": "1"
+}
