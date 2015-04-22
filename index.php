@@ -154,26 +154,31 @@ class Business_Review {
 			'rating_one'             => array(
 				'title'                => $this->config('rating_criteria_one')['long_title'],
 				'short_title'          => $this->config('rating_criteria_one')['short_title'],
+				'description'          => $this->config('rating_criteria_one')['description'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_one')['weight'] ),
 			'rating_two'             => array(
 				'title'                => $this->config('rating_criteria_two')['long_title'],
 				'short_title'          => $this->config('rating_criteria_two')['short_title'],
+				'description'          => $this->config('rating_criteria_two')['description'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_two')['weight'] ),
 			'rating_three'           => array(
 				'title'                => $this->config('rating_criteria_three')['long_title'],
 				'short_title'          => $this->config('rating_criteria_three')['short_title'],
+				'description'          => $this->config('rating_criteria_three')['description'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_three')['weight'] ),
 			'rating_four'            => array(
 				'title'                => $this->config('rating_criteria_four')['long_title'],
 				'short_title'          => $this->config('rating_criteria_four')['short_title'],
+				'description'          => $this->config('rating_criteria_four')['description'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_four')['weight'] ),
 			'rating_five'            => array(
 				'title'                => $this->config('rating_criteria_five')['long_title'],
 				'short_title'          => $this->config('rating_criteria_five')['short_title'],
+				'description'          => $this->config('rating_criteria_five')['description'],
 				'type'                 => 'rating',
 				'weight'               => $this->config('rating_criteria_five')['weight'] )
 		);
@@ -606,7 +611,7 @@ class Business_Review {
 
 				foreach( $review_fields as $key ){
 					echo "<div class=\"review-row\">";
-					echo "<label for=\"review_$key\">".$this->review_info[$key]['title']."</label>";
+					echo "<label for=\"review_$key\">".$this->review_info[$key]['title'].($this->review_info[$key]['description']!=''?"<br/><small>".$this->review_info[$key]['description']."</small>":'')."</label>";
 					$data = array(
 						'id'    => 'review_'.$key,
 						'name'  => "review_info[$key]",

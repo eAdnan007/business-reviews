@@ -96,6 +96,7 @@ body.br-review-result {
 .br-stars-big {
 	width: 240px;
 	background-position: 0 -48px;
+	display: block;
 }
 .br-stars-big span {
 	top: -48px;
