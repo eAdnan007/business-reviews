@@ -341,6 +341,13 @@
                             'default'  => 0
                         ),
                         array(
+                            'id'       => 'review_columns',
+                            'type'     => 'text',
+                            'title'    => __( 'Review Columns', 'business-review' ),
+                            'subtitle' => __( 'Number of columns to divide the reviews in.', 'business-review' ),
+                            'default'  => 2
+                        ),
+                        array(
                             'id'        => 'show_gravatar',
                             'type'      => 'switch',
                             'title'     => __('Show Gravatar', 'business-review'),

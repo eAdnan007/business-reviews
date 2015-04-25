@@ -7,9 +7,10 @@ body.br-review-result {
 	padding: 10px;
 }
 .br-review {
-	width: 30%;
-	margin: 20px 1.66%;
+	padding: 20px 1.66%;
+	box-sizing: border-box;
 	float: left;
+	min-width: 200px;
 }
 .br-author img {
 	float: left;

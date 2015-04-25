@@ -541,6 +541,9 @@ class Business_Review {
 		</div>
 		<style>
 		<?php echo $this->config('custom_css'); ?>
+		.br-review {
+			width: <?php echo 100/$this->config('review_columns');?>%;
+		}
 		</style>
 		<?php
 		return ob_get_clean();
