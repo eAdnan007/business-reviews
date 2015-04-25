@@ -4,7 +4,7 @@ Plugin Name: Business Reviews
 Plugin URI: http://knockoutwebsolutions.com/business-reviews
 Description: Let visitors of your website review your business and show off the reviews at the same time.
 Version: 1.5
-Author: KnockoutWebSolutions
+Author: Knockout Web Solutions
 Author URI: http://knockoutwebsolutions.com
 License: Personal
 */
