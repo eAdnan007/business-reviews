@@ -488,8 +488,8 @@ class Business_Review {
 			'orderby'             => 'date',
 								
 			//Pagination Parameters
-			'posts_per_page'         => 30,
-			'nopaging'               => true,			
+			'posts_per_page'         => $this->config('number_of_reviews'),
+			'nopaging'               => false,
 		);
 		
 		$review_query = new WP_Query( $args );

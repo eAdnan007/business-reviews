@@ -341,6 +341,12 @@
                             'default'  => 0
                         ),
                         array(
+                            'id'       => 'number_of_reviews',
+                            'type'     => 'text',
+                            'title'    => __( 'Number of Reviews to Show', 'business-review'),
+                            'default'  => 30
+                        ),
+                        array(
                             'id'       => 'review_columns',
                             'type'     => 'text',
                             'title'    => __( 'Review Columns', 'business-review' ),
