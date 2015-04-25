@@ -387,7 +387,7 @@
                             'id'       => 'thank_you_message_positive',
                             'type'     => 'editor',
                             'title'    => __( 'Thankyou Message for Positive Review', 'business-review' ),
-                            'default'  => __('Thank you for your feedback. We would really appreciate if you take couple more minutes to review us on the following websites.', 'business-review' )
+                            'default'  => __( 'Thank you for your feedback. Your feedback inspires us making the service better.', 'business-review' )
                         ),
                         array(
                             'id'       => 'thank_you_message_negative',

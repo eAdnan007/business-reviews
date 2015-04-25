@@ -36,7 +36,7 @@
     "restriction_scope": "location",
     "one_review_per_ip": true,
     "one_review_per_email": true,
-    "thank_you_message_positive": "<p>Thank you for your feedback. We would really appreciate if you take couple more minutes to review us on the following websites.<\/p>",
+    "thank_you_message_positive": "Thank you for your feedback. Your feedback inspires us making the service better.",
     "thank_you_message_negative": "We are sorry to see that you were not satisfied with our service. Before publishing this review, we will contact you trying to fix your issue if possible.",
     "review_duplicate_error": "We only accept one review per person to protect the integrity.",
     "custom_css": "",
