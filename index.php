@@ -508,7 +508,7 @@ class Business_Review {
 						}
 
 						if( current_user_can('edit_pages' ) ){
-							echo '<a href="'.get_edit_post_link( $post->ID ).'">'
+							echo '<a href="'.get_edit_post_link(get_the_ID()).'">'
 								. $info['first_name']['value'] . ' ' . $info['last_name']['value']
 								. '</a>';
 						}
@@ -556,6 +556,7 @@ class Business_Review {
 		$format    = 'Y-m-d G:i:s';
 		$timestamp = get_the_time('U');
 		$timezone  = get_option('timezone_string');
+		if('' == $timezone) $timezone = 'UTC';
 
 		$datetime = new DateTime(date_i18n($format, $timestamp), new DateTimeZone($timezone));
 		return $datetime->format('c');
