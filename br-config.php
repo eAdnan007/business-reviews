@@ -462,6 +462,7 @@
                     'default_show' => true,
                     'default_mark' => '*',
                     'dev_mode' => false,
+                    'admin_bar' => false,
                     'hints' => 
                     array(
                       'icon' => 'el-icon-info-sign',
