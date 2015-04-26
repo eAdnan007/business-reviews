@@ -1028,6 +1028,8 @@ class Business_Review {
 		extract( shortcode_atts( array(
 			'location' => '' ),
 			$atts ) );
+			
+		$location = sanitize_title( $location );
 
 
 		$reviews = get_posts(
