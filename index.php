@@ -77,7 +77,7 @@ class Business_Review {
 		$labels = array(
 			'name'                => _x( 'Reviews', 'Post Type General Name', 'business-review' ),
 			'singular_name'       => _x( 'Review', 'Post Type Singular Name', 'business-review' ),
-			'menu_name'           => __( 'Business Review', 'business-review' ),
+			'menu_name'           => __( 'Business Reviews', 'business-review' ),
 			'parent_item_colon'   => __( 'Parent Item:', 'business-review' ),
 			'all_items'           => __( 'All Reviews', 'business-review' ),
 			'view_item'           => __( 'View Review', 'business-review' ),
