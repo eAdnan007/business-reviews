@@ -392,13 +392,13 @@
                         array(
                             'id'       => 'thank_you_message_positive',
                             'type'     => 'editor',
-                            'title'    => __( 'Thankyou Message for Positive Review', 'business-review' ),
+                            'title'    => __( 'Thank You Message for Positive Review', 'business-review' ),
                             'default'  => __( 'Thank you for your feedback. Your feedback inspires us making the service better.', 'business-review' )
                         ),
                         array(
                             'id'       => 'thank_you_message_negative',
                             'type'     => 'editor',
-                            'title'    => __( 'Thankyou Message for Negative Review', 'business-review' ),
+                            'title'    => __( 'Thank You Message for Negative Review', 'business-review' ),
                             'default'  => __( 'We are sorry to see that you were not satisfied with our service. Before publishing this review, we will contact you trying to fix your issue if possible.', 'business-review' )
                         ),
                         array(
