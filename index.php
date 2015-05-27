@@ -61,14 +61,14 @@ class Business_Review {
 		add_shortcode( 'business_reviews', array( $this, 'review_shortcode_content' ) );
 		add_shortcode( 'location_rating', array( $this, 'location_rating' ) );
 	}
-	
+
 	/**
 	 * Loads textdomain to make the plugin translation ready.
 	 */
 	public function load_text_domain() {
 		load_plugin_textdomain('business-review', false, basename( dirname( __FILE__ ) ) . '/languages' );
 	}
-	
+
 	/**
 	 * Register review post type to handle website reviews.
 	 */
@@ -120,35 +120,35 @@ class Business_Review {
 	public function update_settings(){
 
 		$this->review_info = array(
-			'reviewer_ip'             => array( 
+			'reviewer_ip'             => array(
 				'title'                => __( 'Reviewer IP', 'business-review' ),
 				'type'                 => 'hidden' ),
-			'location'               => array( 
+			'location'               => array(
 				'title'                => __( 'Office Location', 'business-review' ),
 				'type'                 => 'select',
 				'options'              => $this->config( 'locations' ) ),
-			'first_name'             => array( 
+			'first_name'             => array(
 				'title'                => __( 'First Name', 'business-review' ),
 				'type'                 => 'text' ),
-			'last_name'              => array( 
+			'last_name'              => array(
 				'title'                => __( 'Last Name', 'business-review' ),
 				'type'                 => 'text' ),
-			'email'                  => array( 
+			'email'                  => array(
 				'title'                => __( 'Email', 'business-review' ),
 				'type'                 => 'text',
 				'validation'           => 'email' ),
-			'phone'                  => array( 
+			'phone'                  => array(
 				'title'                => __( 'Phone Number', 'business-review' ),
 				'type'                 => 'text',
 				'validation'           => 'tel' ),
-			'employee_name'          => array( 
+			'employee_name'          => array(
 				'title'                => __( 'Name of Employee', 'business-review' ),
 				'type'                 => 'text' ),
-			'visit_date'             => array( 
+			'visit_date'             => array(
 				'title'                => __( 'Date of Visit', 'business-review' ),
 				'type'                 => 'text',
 				'validation'           => 'date' ),
-			'rating_avg'             => array( 
+			'rating_avg'             => array(
 				'title'                => __( 'Average Rating', 'business-review' ),
 				'type'                 => 'text' ),
 			'rating_one'             => array(
@@ -189,17 +189,17 @@ class Business_Review {
 	 * Add metabox in business review post type
 	 */
 	public function add_metaboxes(){
-		add_meta_box( 
-			'namediv', 
-			__( 'Review Information', 'business-review' ), 
-			array( $this, 'review_info_metabox_content' ), 
+		add_meta_box(
+			'namediv',
+			__( 'Review Information', 'business-review' ),
+			array( $this, 'review_info_metabox_content' ),
 			'business_review' );
 	}
 
 
 	/**
 	 * Provides all the information related with a review.
-	 * 
+	 *
 	 * @param int $review_id ID of the review post.
 	 */
 	public function get_review_info( $review_id = null ){
@@ -215,7 +215,7 @@ class Business_Review {
 		}
 
 		$locations = $this->config('locations');
-		$review_info['location']['value'] = array( 
+		$review_info['location']['value'] = array(
 			'slug'  => $review_info['location']['value'],
 			'title' => $locations[$review_info['location']['value']] );
 
@@ -234,7 +234,7 @@ class Business_Review {
 			<?php foreach( $review_info as $key => $field ): ?>
 				<tr valign="top">
 					<td class="first"><?php echo isset($field['short_title']) ? $field['short_title'] : $field['title']; ?></td>
-					<?php 
+					<?php
 					$data = array(
 						'name'  => "review_info[$key]",
 						'id'    => "review-info-$key",
@@ -279,8 +279,8 @@ class Business_Review {
 
 		/**
 		 * Store the ip address of reviewer
-		 * 
-		 * The review might be updated by some website users after the review has been submitted for first time. 
+		 *
+		 * The review might be updated by some website users after the review has been submitted for first time.
 		 * In such case there will be already an ip address set. We do not want to override that value to preserve
 		 * the ip address of the actual reviewer, which is ensured by the fourth argument.
 		 */
@@ -293,7 +293,7 @@ class Business_Review {
 		foreach( $fields as $key => $info ){
 			if( isset( $_POST['review_info'][$key] ) ) {
 				update_post_meta( $post_id, 'br_review_info_'.$key, $_POST['review_info'][$key] );
-				
+
 				/**
 				 * We have additional calculations for rating fields to calculate the average rating.
 				 */
@@ -311,7 +311,7 @@ class Business_Review {
 		}
 
 
-		if( 
+		if(
 			!current_user_can( 'publish_pages' ) // Not an authentic user to approve reviews
 			&& $this->is_poor_rating( $post_id, $avg_rating ) // A poor rating
 			&& $this->config( 'verify_poor_rating' ) // Review of poor rating is on
@@ -333,7 +333,7 @@ class Business_Review {
 
 	/**
 	 * Replace the columns in all posts screen of business_review
-	 * 
+	 *
 	 * @param mixed[] $columns Array of available columns
 	 */
 	public function replace_business_review_columns( $columns ){
@@ -359,7 +359,7 @@ class Business_Review {
 		switch ( $column ) {
 			case 'review_author':
 				?>
-					
+
 				<strong>
 					<?php echo get_avatar( $review_info['email']['value'], 32 ); ?>
 					<?php echo $review_info['first_name']['value'] . ' ' . $review_info['last_name']['value']; ?>
@@ -394,7 +394,7 @@ class Business_Review {
 
 	/**
 	 * Returns the configuration parameter for Business Review plugin
-	 * 
+	 *
 	 * @param string $key Name of the parameter
 	 */
 	public static function config( $key ){
@@ -417,33 +417,33 @@ class Business_Review {
 	public function enqueue_front_end(){
 
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 
-			'fancybox', 
+		wp_enqueue_script(
+			'fancybox',
 			plugins_url( 'js/jquery.fancybox.pack.js', __FILE__ ),
 			array('jquery') );
-		wp_enqueue_script( 
-			'timeago', 
+		wp_enqueue_script(
+			'timeago',
 			plugins_url( 'js/jquery.timeago.js', __FILE__ ),
 			array('jquery') );
-		wp_enqueue_script( 
-			'readmore', 
+		wp_enqueue_script(
+			'readmore',
 			plugins_url( 'js/readmore.min.js', __FILE__ ),
 			array('jquery') );
-		wp_enqueue_script( 
-			'masonry', 
+		wp_enqueue_script(
+			'masonry',
 			plugins_url( 'js/masonry.pkgd.min.js', __FILE__ ),
 			array('jquery') );
-		wp_enqueue_script( 
-			'inputmask', 
+		wp_enqueue_script(
+			'inputmask',
 			plugins_url( 'js/jquery.inputmask.bundle.js', __FILE__ ),
 			array('jquery'), '3.1.62-6' );
-		wp_enqueue_script( 
-			'rating', 
+		wp_enqueue_script(
+			'rating',
 			plugins_url( 'js/rating.js', __FILE__ ),
 			array('jquery') );
 
-		wp_enqueue_script( 
-			'business-reviews', 
+		wp_enqueue_script(
+			'business-reviews',
 			plugins_url( 'js/businessreviews.js', __FILE__ ),
 			array('jquery', 'fancybox', 'timeago', 'readmore', 'masonry', 'inputmask') );
 		wp_localize_script( 'business-reviews', 'br', array(
@@ -460,8 +460,8 @@ class Business_Review {
 	public function enqueue_back_end($hook){
 		wp_enqueue_style( 'business-review', plugins_url( '/css/business-review.css', __FILE__ ) );
 
-		wp_enqueue_script( 
-			'business-reviews', 
+		wp_enqueue_script(
+			'business-reviews',
 			plugins_url( 'js/rating.js', __FILE__ ),
 			array('jquery') );
 	}
@@ -478,20 +478,20 @@ class Business_Review {
 		 *
 		 */
 		$args = array(
-			
+
 			//Type & Status Parameters
 			'post_type'   => 'business_review',
 			'post_status' => 'publish',
-								
+
 			//Order & Orderby Parameters
 			'order'               => 'DESC',
 			'orderby'             => 'date',
-								
+
 			//Pagination Parameters
 			'posts_per_page'         => $this->config('number_of_reviews'),
 			'nopaging'               => false,
 		);
-		
+
 		$review_query = new WP_Query( $args );
 
 		if( $review_query->have_posts() ) :
@@ -513,7 +513,7 @@ class Business_Review {
 								. '</a>';
 						}
 						else {
-							echo $info['first_name']['value'] . ' ' . $info['last_name']['value']; 
+							echo $info['first_name']['value'] . ' ' . $info['last_name']['value'];
 						}
 						?>
 					</div>
@@ -523,7 +523,7 @@ class Business_Review {
 						<abbr class="timeago" title="<?php echo $this->get_iso_8601(); ?>"><?php echo get_the_time( 'F j, Y' ); ?></abbr>
 					</div>
 					<div class="br-location">
-						<?php _ex( 'on', 'To specify location of review.', 'business-review' ); ?> 
+						<?php _ex( 'on', 'To specify location of review.', 'business-review' ); ?>
 						<?php echo $info['location']['value']['title']; ?>
 					</div>
 					<div class="br-comment"><?php the_content(); ?></div>
@@ -535,7 +535,7 @@ class Business_Review {
 		endif;
 		wp_reset_query();
 		?>
-		
+
 		<div class="review-center">
 			<button id="submit-review" class="btn btn-default btn-sm" data-fancybox-type="iframe"><?php _e( 'Submit Your Review', 'business-review' ); ?></button>
 		</div>
@@ -551,7 +551,7 @@ class Business_Review {
 
 	/**
 	 * Returns date in ISO 8601 format.
-	 * 
+	 *
 	 * The jquery timeago plugin requires date to be provided on ISO 8601 format. The default wp function get_the_time()
 	 * provides wrong value for that. This method overcomes the issue.
 	 */
@@ -596,7 +596,7 @@ class Business_Review {
 			<?php wp_head(); ?>
 		</head>
 		<body style="background: #FFF;">
-			
+
 		<form
 			action="<?php echo admin_url('admin-ajax.php'); ?>"
 			id="review-form"
@@ -604,7 +604,7 @@ class Business_Review {
 
 			<h2><?php _e('Please Let Us Know Your Feedback', 'business-review'); ?></h2>
 			<div class="review-left">
-				<?php 
+				<?php
 				$review_fields = array(
 					'rating_one',
 					'rating_two',
@@ -630,7 +630,7 @@ class Business_Review {
 			<div class="review-right">
 				<div class="review-row">
 					<div class="review-half">
-						<?php 
+						<?php
 						$key = 'first_name';
 						 ?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -642,7 +642,7 @@ class Business_Review {
 						) ); ?>
 					</div>
 					<div class="review-half">
-						<?php 
+						<?php
 						$key = 'last_name';
 						 ?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -656,7 +656,7 @@ class Business_Review {
 				</div>
 				<div class="review-row">
 					<div class="review-half">
-						<?php 
+						<?php
 						$key = 'email';
 						?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -669,7 +669,7 @@ class Business_Review {
 						) ); ?>
 					</div>
 					<div class="review-half">
-						<?php 
+						<?php
 						$key = 'phone';
 						 ?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -684,7 +684,7 @@ class Business_Review {
 				</div>
 				<div class="review-row">
 					<div class="review-half">
-						<?php 
+						<?php
 						$key = 'employee_name';
 						 ?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -696,7 +696,7 @@ class Business_Review {
 						) ); ?>
 					</div>
 					<div class="review-half">
-						<?php 
+						<?php
 						$key = 'visit_date';
 						 ?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -711,7 +711,7 @@ class Business_Review {
 				</div>
 				<div class="review-row">
 					<div class="review-full">
-						<?php 
+						<?php
 						$key = 'location';
 						 ?>
 						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
@@ -821,14 +821,14 @@ class Business_Review {
 			$existing_reviews = get_posts( $query );
 			$user_could_review = empty( $existing_reviews );
 		}
-		
+
 		// Only create the review if the user is not caught reviewing multiple times
 		if( $user_could_review ){
-			
+
 			/**
 			 * Save the review.
-			 * 
-			 * As the review is stored, it calls $this->save_business_review_info_meta() 
+			 *
+			 * As the review is stored, it calls $this->save_business_review_info_meta()
 			 * to save the meta associated with this review. It may also change the post_status.
 			 */
 			$post_id = wp_insert_post( array(
@@ -845,7 +845,7 @@ class Business_Review {
 			<?php wp_head(); ?>
 		</head>
 		<body class="br-review-result">
-			<?php 
+			<?php
 			if( !$user_could_review ){
 				echo $this->config( 'review_duplicate_error' );
 			}
@@ -869,7 +869,7 @@ class Business_Review {
 
 	/**
 	 * Conditional function to determine wheather a review is satisfied or not based on the avg.
-	 * 
+	 *
 	 * @param int $review_id ID of the review post.
 	 */
 	public function is_poor_rating( $review_id = null, $rating = null ){
@@ -886,7 +886,7 @@ class Business_Review {
 
 	/**
 	 * Displays rating stars with or without the ability to rate.
-	 * 
+	 *
 	 * @param double $rating Initial rating
 	 * @param string $target_field CSS selector for the hidden field which will contain the rating to send via form.
 	 */
@@ -903,7 +903,7 @@ class Business_Review {
 
 	/**
 	 * Controls generation of all kind of supported fields.
-	 * 
+	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
 	public function create_field( $type, $data ){
@@ -920,7 +920,6 @@ class Business_Review {
 			),
 			$data
 		);
-
 		extract( $data );
 
 		$attr_strs = array();
@@ -928,7 +927,7 @@ class Business_Review {
 			$attr_strs[] = "$key=\"$value\"";
 		}
 		$data['atts'] = implode( ' ', $attr_strs );
-
+		
 		switch( $type ) {
 			case 'text':
 				$this->text_field( $data );
@@ -946,7 +945,7 @@ class Business_Review {
 
 	/**
 	 * Generates a select dropdown.
-	 * 
+	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
 	private function select_field( $data ){
@@ -963,16 +962,16 @@ class Business_Review {
 
 	/**
 	 * Echoes a hidden input field
-	 * 
+	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
 	private function hidden_field( $data ){
 		extract( $data );
 		?>
-		<input 
-			type="hidden" 
-			name="<?php echo $name; ?>" 
-			id="<?php echo $id; ?>" 
+		<input
+			type="hidden"
+			name="<?php echo $name; ?>"
+			id="<?php echo $id; ?>"
 			value="<?php echo $value; ?>"
 			<?php echo $atts; ?>>
 		<?php
@@ -981,16 +980,16 @@ class Business_Review {
 
 	/**
 	 * Provides a text field.
-	 * 
+	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
 	private function text_field( $data ){
 		extract( $data );
 		?>
-		<input 
-			type="text" 
-			name="<?php echo $name; ?>" 
-			id="<?php echo $id; ?>" 
+		<input
+			type="text"
+			name="<?php echo $name; ?>"
+			id="<?php echo $id; ?>"
 			value="<?php echo $value; ?>"
 			<?php echo $atts; ?>>
 		<?php
@@ -999,9 +998,9 @@ class Business_Review {
 
 	/**
 	 * Get post restore link
-	 * 
+	 *
 	 * Produces a link that provides a nonced link which can restore a post from trash.
-	 * 
+	 *
 	 * @param int $post_id ID of the post to untrash.
 	 */
 	private function get_undelete_post_link( $post_id = null ) {
@@ -1014,13 +1013,13 @@ class Business_Review {
 		$_wpnonce = wp_create_nonce( 'untrash-post_' . $post_id );
 		$url = admin_url( 'post.php?post=' . $post_id . '&action=untrash&_wpnonce=' . $_wpnonce );
 
-		return $url; 
+		return $url;
 	}
 
 
 	/**
 	 * Display the average review of a location.
-	 * 
+	 *
 	 * Used by a shortcode.
 	 */
 	public function location_rating( $atts ){
@@ -1028,7 +1027,7 @@ class Business_Review {
 		extract( shortcode_atts( array(
 			'location' => '' ),
 			$atts ) );
-			
+
 		$location = sanitize_title( $location );
 
 
@@ -1067,7 +1066,7 @@ class Business_Review {
 					_e( 'Be the first one to review.', 'business-review' );
 				else
 					echo sprintf(
-						_n( '%0.2lf/5 from one rating.', '%0.2lf/5 from %d ratings.', $count, 'business-review' ), 
+						_n( '%0.2lf/5 from one rating.', '%0.2lf/5 from %d ratings.', $count, 'business-review' ),
 						$grand_avg, $count );
 				?>
 			</a>
