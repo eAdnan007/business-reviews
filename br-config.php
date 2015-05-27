@@ -238,7 +238,7 @@
                             'id'       => 'locations',
                             'type'     => 'multi_text',
                             'title'    => __( 'Locations', 'business-review' ),
-                            'desc'     => __( 'Different locations where the business have brances.', 'business-review' )
+                            'desc'     => __( 'Different locations where the business have branches.', 'business-review' )
                         ),
                         array(
                             'id'       => 'rating_criteria_one',
