@@ -30,15 +30,8 @@ class Business_Review {
 
 	public function __construct(){
 
-
-
-		// Create the settings page.
-		if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' ) ) {
-		    require_once( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' );
-		}
-		if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/br-config.php' ) ) {
-		    require_once( dirname( __FILE__ ) . '/br-config.php' );
-		}
+		add_action( 'redux/extensions/business_review_config/before', array( $this, 'redux_register_custom_extension_loader' ), 0 );
+		add_filter( 'manage_business_review_posts_columns', array( $this, 'replace_business_review_columns' ) );
 
 
 		add_action( 'init', array( $this, 'load_text_domain' ) );
@@ -46,7 +39,6 @@ class Business_Review {
 		add_action( 'init', array( $this, 'update_settings' ) );
 		add_action( 'add_meta_boxes_business_review', array( $this, 'add_metaboxes' ) );
 		add_action( 'save_post', array( $this, 'save_business_review_info_meta' ), 10, 2 );
-		add_filter( 'manage_business_review_posts_columns', array( $this, 'replace_business_review_columns' ) );
 		add_action( 'manage_posts_custom_column', array( $this, 'business_review_column_info' ), 10, 2 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_front_end' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_back_end' ) );
@@ -60,6 +52,15 @@ class Business_Review {
 
 		add_shortcode( 'business_reviews', array( $this, 'review_shortcode_content' ) );
 		add_shortcode( 'location_rating', array( $this, 'location_rating' ) );
+
+
+		// Create the settings page.
+		if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' ) ) {
+		    require_once( dirname( __FILE__ ) . '/options/ReduxCore/framework.php' );
+		}
+		if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/br-config.php' ) ) {
+		    require_once( dirname( __FILE__ ) . '/br-config.php' );
+		}
 	}
 
 	/**
@@ -389,6 +390,31 @@ class Business_Review {
 				<?php
 				break;
 		}
+	}
+
+	/**
+	 * Load redux extensions
+	 */
+	function redux_register_custom_extension_loader($ReduxFramework) {
+		$path    = dirname( __FILE__ ) . '/redux_extensions/';
+			$folders = scandir( $path, 1 );
+			foreach ( $folders as $folder ) {
+				if ( $folder === '.' or $folder === '..' or ! is_dir( $path . $folder ) ) {
+					continue;
+				}
+				$extension_class = 'ReduxFramework_Extension_' . $folder;
+				if ( ! class_exists( $extension_class ) ) {
+					// In case you wanted override your override, hah.
+					$class_file = $path . $folder . '/extension_' . $folder . '.php';
+					$class_file = apply_filters( 'redux/extension/' . $ReduxFramework->args['opt_name'] . '/' . $folder, $class_file );
+					if ( $class_file ) {
+						require_once( $class_file );
+					}
+				}
+				if ( ! isset( $ReduxFramework->extensions[ $folder ] ) ) {
+					$ReduxFramework->extensions[ $folder ] = new $extension_class( $ReduxFramework );
+				}
+			}
 	}
 
 
