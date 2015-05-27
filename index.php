@@ -596,10 +596,11 @@ class Business_Review {
 	 * Outputs a list of location clicking which the reviews can be filtered.
 	 */
 	private function review_location_filter(){
+		$locations = $this->config('locations');
+		if( sizeof( $locations ) < 2 ) return;
 		?>
 		<div id="br-location-filter">
 			<ul class="br-filter">
-				<?php $locations = $this->config('locations'); ?>
 				<li><a href="#all"><?php _e( 'All', 'business-review' ); ?></a></li>
 				<?php foreach( $locations as $key => $title ): ?>
 					<li><a href="#<?php echo $key ?>"><?php echo $title; ?></a></li>
