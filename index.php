@@ -946,6 +946,8 @@ class Business_Review {
 			),
 			$data
 		);
+		
+		if( 'textarea' == $type && !isset( $data['attr']['rows'] ) ) $data['attr']['rows'] = 5;
 		extract( $data );
 
 		$attr_strs = array();
@@ -957,8 +959,29 @@ class Business_Review {
 		if( !$echo ) ob_start();
 		
 		switch( $type ) {
+			case 'email':
+				unset( $data['atts'] );
+				$data['attr']['class'] = implode( ' ', array( $data['attr']['class'], 'inputmask' ) );
+				$data['attr']['data-inputmask'] = "'alias': 'email'";
+				self::create_field( 'text', $data );
+				break;
+			case 'phone':
+				unset( $data['atts'] );
+				$data['attr']['class'] = implode( ' ', array( $data['attr']['class'], 'inputmask' ) );
+				$data['attr']['data-inputmask'] = "'alias': 'mm/dd/yyyy'";
+				self::create_field( 'text', $data );
+				break;
+			case 'phone':
+				unset( $data['atts'] );
+				$data['attr']['class'] = implode( ' ', array( $data['attr']['class'], 'inputmask' ) );
+				$data['attr']['data-inputmask'] = "'mask': '(999) 999-9999'";
+				self::create_field( 'text', $data );
+				break;
 			case 'text':
 				self::text_field( $data );
+				break;
+			case 'textarea':
+				self::textarea_field( $data );
 				break;
 			case 'select':
 				self::select_field( $data );
@@ -1022,6 +1045,23 @@ class Business_Review {
 			id="<?php echo $id; ?>"
 			value="<?php echo $value; ?>"
 			<?php echo $atts; ?>>
+		<?php
+	}
+
+
+	/**
+	 * Provides a textarea.
+	 *
+	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
+	 */
+	public static function textarea_field( $data ){
+		extract( $data );
+		?>
+		<textarea
+			name="<?php echo $name; ?>"
+			id="<?php echo $id; ?>"
+			<?php echo $atts; ?>
+		><?php echo $value; ?></textarea>
 		<?php
 	}
 
