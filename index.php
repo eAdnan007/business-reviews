@@ -932,8 +932,8 @@ class Business_Review {
 	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
-	public function create_field( $type, $data ){
-
+	public static function create_field( $type, $data, $echo = true ){
+		
 		$data = shortcode_atts(
 			array(
 				'id'      => '',
@@ -954,18 +954,22 @@ class Business_Review {
 		}
 		$data['atts'] = implode( ' ', $attr_strs );
 		
+		if( !$echo ) ob_start();
+		
 		switch( $type ) {
 			case 'text':
-				$this->text_field( $data );
+				self::text_field( $data );
 				break;
 			case 'select':
-				$this->select_field( $data );
+				self::select_field( $data );
 				break;
 			case 'rating':
-				$this->show_stars( $size, 0, "#$id" );
-				$this->hidden_field( $data );
+				self::show_stars( $size, 0, "#$id" );
+				self::hidden_field( $data );
 				break;
 		}
+		
+		if( !$echo ) return ob_get_clean();
 	}
 
 
@@ -974,7 +978,7 @@ class Business_Review {
 	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
-	private function select_field( $data ){
+	public static function select_field( $data ){
 		extract( $data );
 		?>
 		<select name="<?php echo $name; ?>" id="<?php echo $id; ?>" <?php echo $atts; ?>>
@@ -991,7 +995,7 @@ class Business_Review {
 	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
-	private function hidden_field( $data ){
+	public static function hidden_field( $data ){
 		extract( $data );
 		?>
 		<input
@@ -1009,7 +1013,7 @@ class Business_Review {
 	 *
 	 * @param mixed[] $data Array of information regarding the field. Includes name, id, value, options and atts.
 	 */
-	private function text_field( $data ){
+	public static function text_field( $data ){
 		extract( $data );
 		?>
 		<input
