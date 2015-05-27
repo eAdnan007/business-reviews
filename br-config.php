@@ -241,6 +241,11 @@
                             'desc'     => __( 'Different locations where the business have branches.', 'business-review' )
                         ),
                         array(
+                            'id'       => 'rating_fields',
+                            'type'     => 'grid_input',
+                            'title'    => __( 'Review fields', 'business-review' ),
+                            'subtitle' => __( 'List all the fields or rating criterias here.', 'business-review' ) ),
+                        array(
                             'id'       => 'rating_criteria_one',
                             'type'     => 'text',
                             'title'    => __( 'Rating Criteria One Options', 'business-review' ),
