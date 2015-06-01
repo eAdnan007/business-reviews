@@ -244,7 +244,8 @@
                             'id'       => 'rating_fields',
                             'type'     => 'grid_input',
                             'title'    => __( 'Review fields', 'business-review' ),
-                            'subtitle' => __( 'List all the fields or rating criterias here.', 'business-review' ) ),
+                            'subtitle' => __( 'List all the fields or rating criterias here.', 'business-review' ),
+                            'desc'     => __( 'Changing this setting may mess up your existing reviews.', 'business-review' ) ),
                         array(
                             'id'       => 'satisfaction_threshold',
                             'type'     => 'text',
