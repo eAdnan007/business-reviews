@@ -137,10 +137,7 @@ class Business_Review {
 				'type'                 => 'text' ),
 			'email'                  => array(
 				'title'                => __( 'Email', 'business-review' ),
-				'type'                 => 'text' ),
-			'phone'                  => array(
-				'title'                => __( 'Phone Number', 'business-review' ),
-				'type'                 => 'text' ),
+				'type'                 => 'email' ),
 			'comment'                => array(
 				'title'                => __( 'Comment', 'business-review' ),
 				'type'                 => 'textarea'),
@@ -149,12 +146,13 @@ class Business_Review {
 				'type'                 => 'text' )
 		);
 		
+		
 		$dynamic_fields = $this->config( 'rating_fields' );
 		
+		if( !empty( $dynamic_fields ) )
 		foreach( $dynamic_fields as $i => $df ){
 			$field = array(
-				'title'        => $df['question'],
-				'short_title'  => $df['name']
+				'title'        => $df['name'],
 			);
 			
 			if( 'rating' == $df['field_type'] ){
@@ -794,6 +792,8 @@ class Business_Review {
 	 */
 	public static function create_field( $type, $data, $echo = true ){
 		
+		if( isset( $data['attr']['field'] ) ) unset( $data['attr']['field'] );
+
 		$data = shortcode_atts(
 			array(
 				'id'      => '',
@@ -812,7 +812,7 @@ class Business_Review {
 
 		$attr_strs = array();
 		foreach( $attr as $key => $value ){
-			$attr_strs[] = "$key=\"$value\"";
+			if( !is_array( $value ) ) $attr_strs[] = "$key=\"$value\"";
 		}
 		$data['atts'] = implode( ' ', $attr_strs );
 		
@@ -825,7 +825,7 @@ class Business_Review {
 				$data['attr']['data-inputmask'] = "'alias': 'email'";
 				self::create_field( 'text', $data );
 				break;
-			case 'phone':
+			case 'date':
 				unset( $data['atts'] );
 				$data['attr']['class'] = implode( ' ', array( $data['attr']['class'], 'inputmask' ) );
 				$data['attr']['data-inputmask'] = "'alias': 'mm/dd/yyyy'";
@@ -1035,8 +1035,9 @@ class Business_Review {
 		elseif( is_numeric($field) ){
 			$field = "field_$field";
 		}
-			
-
+		
+		$atts = array_merge($this->review_info[ $field ], $atts );
+		
 		return $this->create_field( $this->review_info[ $field ]['type'], array(
 			'id'    => $id,
 			'name'  => "review_info[$field]",
