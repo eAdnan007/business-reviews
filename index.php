@@ -1040,7 +1040,7 @@ class Business_Review {
 		return $this->create_field( $this->review_info[ $field ]['type'], array(
 			'id'    => $id,
 			'name'  => "review_info[$field]",
-			'attr'  => array( 'class' => $class )
+			'attr'  => $atts
 		), false );
 		
 	}
