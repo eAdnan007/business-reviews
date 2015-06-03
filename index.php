@@ -202,8 +202,8 @@ class Business_Review {
 
 		$locations = $this->config('locations');
 		$review_info['location']['value'] = array(
-			'slug'  => $review_info['location']['value'],
-			'title' => $locations[$review_info['location']['value']] );
+			'slug'  => isset( $review_info['location']['value'] ) ? $review_info['location']['value'] : '',
+			'title' => isset( $review_info['location']['value'] ) && isset( $locations[$review_info['location']['value']] ) ? $locations[$review_info['location']['value']] : '' );
 
 		return $review_info;
 	}
