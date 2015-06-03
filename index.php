@@ -213,6 +213,7 @@ class Business_Review {
 	 */
 	public function review_info_metabox_content(){
 		$review_info = $this->get_review_info();
+		unset( $review_info['comment'] );
 		?>
 		<table class="form-table editcomment">
 		<tbody>
@@ -1036,13 +1037,14 @@ class Business_Review {
 			$field = "field_$field";
 		}
 		
-		$atts = array_merge($this->review_info[ $field ], $atts );
-		
-		return $this->create_field( $this->review_info[ $field ]['type'], array(
+		$data = array(
 			'id'    => $id,
 			'name'  => "review_info[$field]",
 			'attr'  => $atts
-		), false );
+		);
+		$data = array_merge($this->review_info[ $field ], $data );
+		
+		return $this->create_field( $this->review_info[ $field ]['type'], $data, false );
 		
 	}
 };
