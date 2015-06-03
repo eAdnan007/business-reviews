@@ -52,6 +52,7 @@ class Business_Review {
 
 		add_shortcode( 'business_reviews', array( $this, 'review_shortcode_content' ) );
 		add_shortcode( 'location_rating', array( $this, 'location_rating' ) );
+		add_shortcode( 'br_field', array( $this, 'review_field' ) );
 
 
 		// Create the settings page.
@@ -142,47 +143,31 @@ class Business_Review {
 				'title'                => __( 'Phone Number', 'business-review' ),
 				'type'                 => 'text',
 				'validation'           => 'tel' ),
-			'employee_name'          => array(
-				'title'                => __( 'Name of Employee', 'business-review' ),
-				'type'                 => 'text' ),
-			'visit_date'             => array(
-				'title'                => __( 'Date of Visit', 'business-review' ),
-				'type'                 => 'text',
-				'validation'           => 'date' ),
 			'rating_avg'             => array(
 				'title'                => __( 'Average Rating', 'business-review' ),
-				'type'                 => 'text' ),
-			'rating_one'             => array(
-				'title'                => $this->config('rating_criteria_one')['long_title'],
-				'short_title'          => $this->config('rating_criteria_one')['short_title'],
-				'description'          => $this->config('rating_criteria_one')['description'],
-				'type'                 => 'rating',
-				'weight'               => $this->config('rating_criteria_one')['weight'] ),
-			'rating_two'             => array(
-				'title'                => $this->config('rating_criteria_two')['long_title'],
-				'short_title'          => $this->config('rating_criteria_two')['short_title'],
-				'description'          => $this->config('rating_criteria_two')['description'],
-				'type'                 => 'rating',
-				'weight'               => $this->config('rating_criteria_two')['weight'] ),
-			'rating_three'           => array(
-				'title'                => $this->config('rating_criteria_three')['long_title'],
-				'short_title'          => $this->config('rating_criteria_three')['short_title'],
-				'description'          => $this->config('rating_criteria_three')['description'],
-				'type'                 => 'rating',
-				'weight'               => $this->config('rating_criteria_three')['weight'] ),
-			'rating_four'            => array(
-				'title'                => $this->config('rating_criteria_four')['long_title'],
-				'short_title'          => $this->config('rating_criteria_four')['short_title'],
-				'description'          => $this->config('rating_criteria_four')['description'],
-				'type'                 => 'rating',
-				'weight'               => $this->config('rating_criteria_four')['weight'] ),
-			'rating_five'            => array(
-				'title'                => $this->config('rating_criteria_five')['long_title'],
-				'short_title'          => $this->config('rating_criteria_five')['short_title'],
-				'description'          => $this->config('rating_criteria_five')['description'],
-				'type'                 => 'rating',
-				'weight'               => $this->config('rating_criteria_five')['weight'] )
+				'type'                 => 'text' )
 		);
+		
+		$dynamic_fields = $this->config( 'rating_fields' );
+		
+		foreach( $dynamic_fields as $i => $df ){
+			$field = array(
+				'title'        => $df['question'],
+				'short_title'  => $df['name']
+			);
+			
+			if( 'rating' == $df['field_type'] ){
+				
+				$sd = array(
+					'type'         => 'rating',
+					'weight'       => $df['rating_weight'] );
+			}
+			elseif( 'question' == $df['field_type'] ){
+				$sd['type'] = $df['question_type'];
+			}
+			
+			$this->review_info["field_$i"] = array_merge( $field, $sd );
+		}
 	}
 
 
@@ -628,136 +613,9 @@ class Business_Review {
 			action="<?php echo admin_url('admin-ajax.php'); ?>"
 			id="review-form"
 			method="post">
-
-			<h2><?php _e('Please Let Us Know Your Feedback', 'business-review'); ?></h2>
-			<div class="review-left">
-				<?php
-				$review_fields = array(
-					'rating_one',
-					'rating_two',
-					'rating_three',
-					'rating_four',
-					'rating_five'
-				);
-
-				foreach( $review_fields as $key ){
-					echo "<div class=\"review-row\">";
-					echo "<label for=\"review_$key\">".$this->review_info[$key]['title'].($this->review_info[$key]['description']!=''?"<br/><small>".$this->review_info[$key]['description']."</small>":'')."</label>";
-					$data = array(
-						'id'    => 'review_'.$key,
-						'name'  => "review_info[$key]",
-						'size'  => 'big'
-						);
-					$this->create_field( 'rating', $data );
-					echo "<br class=\"clear\" />";
-					echo "</div>";
-				}
-				?>
-			</div>
-			<div class="review-right">
-				<div class="review-row">
-					<div class="review-half">
-						<?php
-						$key = 'first_name';
-						 ?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'    => "review_$key",
-							'name'  => "review_info[$key]",
-							'attr'  => array(
-								'class'   => 'review_input' )
-						) ); ?>
-					</div>
-					<div class="review-half">
-						<?php
-						$key = 'last_name';
-						 ?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'    => "review_$key",
-							'name'  => "review_info[$key]",
-							'attr'  => array(
-								'class'   => 'review_input' )
-						) ); ?>
-					</div>
-				</div>
-				<div class="review-row">
-					<div class="review-half">
-						<?php
-						$key = 'email';
-						?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'    => "review_$key",
-							'name'  => "review_info[$key]",
-							'attr'  => array(
-								'class'                 => 'review_input inputmask',
-								'data-inputmask'        => "'alias': 'email'" )
-						) ); ?>
-					</div>
-					<div class="review-half">
-						<?php
-						$key = 'phone';
-						 ?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'    => "review_$key",
-							'name'  => "review_info[$key]",
-							'attr'  => array(
-								'class'                => 'review_input inputmask',
-								'data-inputmask'       => "'mask': '(999) 999-9999'" )
-						) ); ?>
-					</div>
-				</div>
-				<div class="review-row">
-					<div class="review-half">
-						<?php
-						$key = 'employee_name';
-						 ?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'    => "review_$key",
-							'name'  => "review_info[$key]",
-							'attr'  => array(
-								'class'   => 'review_input' )
-						) ); ?>
-					</div>
-					<div class="review-half">
-						<?php
-						$key = 'visit_date';
-						 ?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'    => "review_$key",
-							'name'  => "review_info[$key]",
-							'attr'  => array(
-								'class'       => 'review_input inputmask',
-								'data-inputmask' => "'alias': 'mm/dd/yyyy'" )
-						) ); ?>
-					</div>
-				</div>
-				<div class="review-row">
-					<div class="review-full">
-						<?php
-						$key = 'location';
-						 ?>
-						<label for="review_<?php echo $key;?>"><?php echo $this->review_info[$key]['title'];?></label>
-						<?php $this->create_field( $this->review_info[$key]['type'], array(
-							'id'      => "review_$key",
-							'name'    => "review_info[$key]",
-							'options' => $this->review_info[$key]['options'],
-							'attr'    => array(
-								'class'   => 'review_input' )
-						) ); ?>
-					</div>
-				</div>
-				<div class="review-row">
-					<div class="review-full">
-						<label for="review_comment"><?php _e('Comments', 'business-review'); ?></label>
-						<textarea name="review_info[comment]" id="review_comment" cols="30" rows="10" class="review_input"></textarea>
-					</div>
-				</div>
-			</div>
+			
+			<?php echo do_shortcode( $this->config( 'review_form' ) );?>
+			
 			<input type="hidden" name="action" value="review_submit">
 			<?php wp_nonce_field( 'review_submit', 'review_info[nonce]', false, true ); ?>
 			<br class="clear">
@@ -1145,6 +1003,45 @@ class Business_Review {
 
 		<?php
 		return ob_get_clean();
+	}
+	
+	
+	/**
+	 * Output content for the review input fields for the review submission form
+	 */
+	public function review_field( $atts ){
+		extract( $atts );
+		
+		if( !isset( $atts['id'] ) ){
+			$id = '';
+		}
+		else {
+			unset( $atts['id'] );
+		}		
+		if( !isset( $atts['name'] ) ){
+			$name = '';
+		}
+		else {
+			unset( $atts['name'] );
+		}
+		
+		if( !isset( $field ) && isset( $type ) ){
+			return $this->create_field( $type, array(
+				'id'   => $id,
+				'name' => $name,
+				'attr' => $atts ) );
+		}
+		elseif( is_numeric($field) ){
+			$field = "field_$field";
+		}
+			
+
+		return $this->create_field( $this->review_info[ $field ]['type'], array(
+			'id'    => $id,
+			'name'  => "review_info[$field]",
+			'attr'  => array( 'class' => $class )
+		), false );
+		
 	}
 };
 
