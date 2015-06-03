@@ -137,12 +137,10 @@ class Business_Review {
 				'type'                 => 'text' ),
 			'email'                  => array(
 				'title'                => __( 'Email', 'business-review' ),
-				'type'                 => 'text',
-				'validation'           => 'email' ),
+				'type'                 => 'text' ),
 			'phone'                  => array(
 				'title'                => __( 'Phone Number', 'business-review' ),
-				'type'                 => 'text',
-				'validation'           => 'tel' ),
+				'type'                 => 'text' ),
 			'rating_avg'             => array(
 				'title'                => __( 'Average Rating', 'business-review' ),
 				'type'                 => 'text' )
