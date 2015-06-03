@@ -275,7 +275,7 @@ class Business_Review {
 
 		$fields = $this->get_review_info( $post_id );
 
-		$total_stars = $achived_stars = 0; // Out of how many stars are we dividing the avg
+		$total_ratings = $achived_stars = 0; // Out of how many stars are we dividing the avg
 		foreach( $fields as $key => $info ){
 			if( isset( $_POST['review_info'][$key] ) ) {
 				update_post_meta( $post_id, 'br_review_info_'.$key, $_POST['review_info'][$key] );
@@ -285,14 +285,14 @@ class Business_Review {
 				 */
 				if( 'rating' == $info['type'] ){
 					if( $_POST['review_info'][$key] >= 1 && $_POST['review_info'][$key] <= 5 ){
-						$total_stars   += $info['weight']; // Rating each criteria increases stars of it's weight in total
-						$achived_stars += $_POST['review_info'][$key];
+						$total_ratings += $info['weight'];
+						$achived_stars += $_POST['review_info'][$key] * $info['weight'];
 					}
 				}
 			}
 		}
-		if( $total_stars != 0 ){
-			$avg_rating = 5.0 * ($achived_stars / $total_stars); // Avg is 5 based
+		if( $total_ratings != 0 ){
+			$avg_rating = $achived_stars / $total_ratings; // Avg is always constant
 			update_post_meta( $post_id, 'br_review_info_rating_avg', $avg_rating );
 		}
 
