@@ -133,19 +133,6 @@ if( !class_exists( 'ReduxFramework_grid_input' ) ) {
                     'class'       => 'regular-text name' ) ) );
             echo "</div>"; // .input-set
 
-            // Question
-            echo "<div class='input_wrapper'>";
-            echo "<label for='".$this->field['id']."-$k-question' id_format='".$this->field['id']."-%d-question'>".__('Question', 'business-review')."</label>";
-            Business_Review::create_field( 'text', array(
-                'name'    => $this->field['name'] . $this->field['name_suffix'] . "[$k][question]",
-                'id'      => $this->field['id']."-$k-question",
-                'value'   => $value['question'],
-                'attr'    => array( 
-                    'name_format' => $this->field['name'] . $this->field['name_suffix'] . "[%d][question]",
-                    'id_format'   => $this->field['id']."-%d-question",
-                    'class'       => 'regular-text question' ) ) );
-            echo "</div>"; // .input-set
-            
             // Rating Weight
             echo '<div class="field-type-rating input_wrapper">';
             echo "<label for='".$this->field['id']."-$k-rating-weight' id_format='".$this->field['id']."-%d-rating-weight'>".__('Rating Weight', 'business-review')."</label>";
