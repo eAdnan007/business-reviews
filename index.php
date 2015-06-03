@@ -141,6 +141,9 @@ class Business_Review {
 			'phone'                  => array(
 				'title'                => __( 'Phone Number', 'business-review' ),
 				'type'                 => 'text' ),
+			'comment'                => array(
+				'title'                => __( 'Comment', 'business-review' ),
+				'type'                 => 'textarea'),
 			'rating_avg'             => array(
 				'title'                => __( 'Average Rating', 'business-review' ),
 				'type'                 => 'text' )
