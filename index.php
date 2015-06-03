@@ -775,7 +775,7 @@ class Business_Review {
 	 * @param double $rating Initial rating
 	 * @param string $target_field CSS selector for the hidden field which will contain the rating to send via form.
 	 */
-	public function show_stars( $size = '', $rating = 0.0, $target_field = null ){
+	public static function show_stars( $size = '', $rating = 0.0, $target_field = null ){
 		if( 'small' == $size ) $size = 'br-stars-small';
 		if( 'big' == $size ) $size = 'br-stars-big';
 		?>
