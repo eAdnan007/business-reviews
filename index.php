@@ -163,6 +163,10 @@ class Business_Review {
 			}
 			elseif( 'question' == $df['field_type'] ){
 				$sd['type'] = $df['question_type'];
+				if( $sd['type'] == 'select' ){
+					$options = preg_split('/[\r\n]+/', $df['dropdown_options'], -1, PREG_SPLIT_NO_EMPTY);
+					$sd['options'] = array_combine( $options, $options );
+				}
 			}
 			
 			$this->review_info["field_$i"] = array_merge( $field, $sd );
